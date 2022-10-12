@@ -33,11 +33,14 @@ export default function Contact() {
             <div className="Contact-me__form-container">
                 <form
                     action="https://send.pageclip.co/waHDjruVHuDXfRjJGMQfBTvkiy63ofDN/My-first-form"
-                    class="Contact-me__form pageclip-form"
+                    class="pageclip-form"
+                    className="Contact-me__form"
                     method="post">
                     <input
                         placeholder="Your Name..."
-                        type="text"
+                        type={Text}
+                        name="name"
+                        data-name="name"
                         className="Contact-me__inputs"
                         style={{
                             borderBottom: theme ? `2px solid ${Light}` : "",
@@ -47,7 +50,9 @@ export default function Contact() {
                     />
                     <input
                         placeholder="Your Email..."
-                        type="email"
+                        type={Text}
+                        name="email"
+                        data-name="Email"
                         className="Contact-me__inputs"
                         style={{
                             borderBottom: theme ? `2px solid ${Light}` : "",
@@ -58,6 +63,9 @@ export default function Contact() {
                     <textarea
                         className="Contact-me__message"
                         placeholder="Ask Me Anything"
+                        type={Text}
+                        name="body"
+                        data-name="message"
                         style={{
                             borderBottom: theme ? `2px solid ${Light}` : "",
                             color: theme ? `${Light}` : ""
