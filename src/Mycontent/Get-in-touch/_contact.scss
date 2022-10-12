@@ -1,0 +1,144 @@
+@import "../../Styles/utilities/varaibles";
+@import "../../Styles/utilities/mixins";
+
+.Contact-me {
+    display: flex;
+    flex-direction: column;
+    margin: 5% 5% 2% 5%;
+
+    @include Mobile {
+        margin: 3% 3% 3% 3%;
+    }
+
+    &__head-container {
+        display: flex;
+        align-items: center;
+        column-gap: 4%;
+        margin-bottom: 5%;
+
+        @include Mobile {
+            column-gap: 6%;
+        }
+    }
+
+    &__head {
+        font-size: 5vw;
+
+        font-family: 'Gemunu Libre', sans-serif;
+        color: $primary_color;
+
+        @include Tablet {
+            font-size: 7vw;
+        }
+
+        @include Mobile {
+            font-size: 10vw;
+        }
+    }
+
+    &__gif {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5vw;
+        width: 5vw;
+        height: 5vw;
+
+        @include Tablet {
+            width: 10vw;
+            height: 8vw;
+        }
+
+        @include Mobile {
+            width: 15vw;
+            height: 15vw;
+        }
+    }
+
+    &__title-container {
+        display: flex;
+        flex-direction: column;
+        margin-right: 5%;
+        font-size: 2.5vw;
+        margin-bottom: 5%;
+        letter-spacing: 0.3vw;
+        font-weight: lighter;
+        font-family: 'Roboto Slab', serif;
+        color: $primary_color;
+
+        @include Tablet {
+            font-size: 3.5vw;
+        }
+
+        @include Mobile {
+            font-size: 5.5vw;
+            line-height: 8vw;
+        }
+    }
+
+    &__mail {
+        @extend .Contact-me;
+        margin-left: 0;
+        color: $hovering_color;
+        font-weight: bold;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    &__form-container {
+        display: flex;
+        margin-top: 8%;
+    }
+
+    &__form {
+        display: flex;
+        width: 50%;
+        row-gap: 5vw;
+        flex-direction: column;
+
+        @include Tablet {
+            width: 80%;
+            row-gap: 10vw;
+        }
+
+        @include Mobile {
+            width: 90%;
+            row-gap: 15vw;
+        }
+    }
+
+    &__inputs {
+        border: none;
+        border-bottom: 2px solid $primary_color;
+        background: transparent;
+        padding-left: 1%;
+        color: $primary_color;
+        outline: none;
+        display: flex;
+        height: 5vw;
+        font-size: 2vw;
+
+        @include Tablet {
+            font-size: 4vw;
+            height: 10vw;
+        }
+
+        @include Mobile {
+            font-size: 7vw;
+            height: 20vw;
+        }
+
+        &:focus {
+            border-bottom: 2px solid $hovering_color !important;
+
+            &::placeholder {
+                color: $hovering_color !important;
+            }
+        }
+    }
+
+    &__message{
+        @extend .Contact-me__inputs;
+    }
+}

@@ -1,0 +1,125 @@
+@import "../../Styles/utilities/varaibles";
+@import "../../Styles/utilities/mixins";
+
+.About {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 5% 2% 5%;
+
+    @include Mobile {
+        margin: 3% 3% 3% 3%;
+    }
+
+    &__head-container {
+        display: flex;
+        align-items: center;
+        column-gap: 4%;
+        margin-bottom: 5%;
+
+        @include Mobile {
+            column-gap: 6%;
+        }
+    }
+
+    &__head {
+        font-size: 5vw;
+        font-family: 'Gemunu Libre', sans-serif;
+        color: $primary_color;
+
+        @include Tablet {
+            font-size: 7vw;
+        }
+
+        @include Mobile {
+            font-size: 10vw;
+        }
+    }
+
+    &__gif {
+        display: flex;
+        align-items: center;
+
+        width: 5vw;
+        height: 5vw;
+
+        @include Tablet {
+            width: 10vw;
+            height: 8vw;
+        }
+
+        @include Mobile {
+            width: 20vw;
+            height: 15vw;
+        }
+    }
+
+
+
+    &__gif-work {
+        @extend .About__gif;
+        width: 8vw;
+        height: 8vw;
+
+        @include Tablet {
+            width: 16vw;
+            height: 16vw;
+        }
+
+        @include Mobile {
+            width: 25vw;
+            height: 25vw;
+        }
+    }
+
+    &__tech {
+        position: relative;
+        width: 5vw;
+        height: 5vw;
+        border-radius: 50%;
+        border: 5px solid $primary_color;
+        border-width: fit-content;
+
+        @include Tablet {
+            width: 8vw;
+            height: 8vw;
+        }
+
+        @include Mobile {
+            width: 15vw;
+            height: 15vw;
+        }
+    }
+
+
+
+    &__title-container {
+        display: flex;
+        flex-direction: column;
+        font-size: 2.5vw;
+        row-gap: 2vw;
+        margin-bottom: 5%;
+        text-align: center;
+        letter-spacing: 0.3vw;
+        font-weight: lighter;
+        font-family: 'Roboto Slab', serif;
+        color: $primary_color;
+
+        @include Tablet {
+            font-size: 3.5vw;
+            row-gap: 10vw;
+        }
+
+        @include Mobile {
+            font-size: 5.5vw;
+            row-gap: 15vw;
+        }
+    }
+
+    &__info-box{
+        display: flex;
+        column-gap: 2%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+}

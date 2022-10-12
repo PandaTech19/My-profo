@@ -1,0 +1,142 @@
+@import "../../Styles/utilities/varaibles";
+@import "../../Styles/utilities/mixins";
+
+.Foot {
+    display: flex;
+    flex-direction: column;
+    background: $primary_color;
+    padding: 2% 5% 2% 5%;
+
+    @include Mobile {
+        padding: 3% 3% 5% 3%;
+    }
+
+    &__logo-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2%;
+
+        @include Mobile {
+            justify-content: start;
+        }
+    }
+
+    &__logo {
+        width: 5vw;
+
+        @include Tablet {
+            width: 10vw;
+        }
+
+        @include Mobile {
+            width: 15vw;
+        }
+    }
+
+    &__link-container {
+        display: flex;
+        width: 100%;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        border-top: 2px solid white;
+        border-bottom: 2px solid white;
+        justify-content: center;
+        font-family: 'Gemunu Libre', sans-serif;
+        font-size: 2vw;
+        column-gap: 5%;
+
+        @include Tablet {
+            font-size: 3.5vw;
+        }
+
+        @include Mobile {
+            flex-direction: column;
+            font-size: 5.5vw;
+            row-gap: 3vw;
+        }
+    }
+
+    &__link {
+        color: $secondary_color;
+
+        &:hover {
+            color: $hovering_color !important;
+            transform: scale(1.1);
+        }
+    }
+
+    &__social-container {
+        display: flex;
+        padding-top: 2%;
+        justify-content: space-between;
+        align-items: center;
+
+        @include Mobile {
+            flex-direction: column;
+        }
+    }
+
+    &__created {
+        color: $secondary_color;
+        font-size: 1.5vw;
+
+        @include Tablet {
+            font-size: 2.5vw;
+        }
+
+        @include Mobile {
+            order: 2;
+            font-size: 5vw;
+
+        }
+    }
+
+    &__socials {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        column-gap: 5%;
+        width: 50%;
+
+        @include Mobile {
+            justify-content: start;
+            width: 100%;
+            padding-bottom: 5%;
+        }
+    }
+
+
+    &__icon {
+        width: 3vw;
+        height: 3vw;
+        color: $secondary_color;
+
+        &:nth-child(3) {
+            height: 2.8vw;
+
+            @include Tablet {
+                height: 4.8vw;
+            }
+
+            @include Mobile {
+                height: 9vw;
+            }
+        }
+
+        &:hover {
+            transform: scale(1.1);
+            color: $hovering_color !important;
+        }
+
+        @include Tablet {
+            width: 5vw;
+            height: 5vw;
+        }
+
+        @include Mobile {
+            width: 10vw;
+            height: 10vw;
+        }
+    }
+}

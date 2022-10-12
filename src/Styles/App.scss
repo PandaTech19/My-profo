@@ -1,0 +1,46 @@
+@import "./utilities/varaibles";
+@import "./utilities/mixins";
+@import "../Mycontent/Navigation/nav";
+@import "../Mycontent/Navigation/menu";
+@import "../Mycontent/Introduction/head";
+@import "../Mycontent/Skills/skills";
+@import "../Mycontent/My-work/work";
+@import "../Mycontent/About-me/about";
+@import "../Mycontent/Get-in-touch/contact";
+@import "../Mycontent/The_end/foot";
+
+
+* {
+  padding: 0;
+  margin: 0;
+  transition: ease-in-out 0.3s;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  width: fit-content;
+}
+
+
+.divider {
+  @include Tablet {
+    margin-top: 10%;
+  }
+
+  @include Mobile {
+    margin-top: 20%;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+
+.App {
+  display: flex;
+  height: auto;
+  flex-direction: column;
+  box-sizing: border-box;
+}

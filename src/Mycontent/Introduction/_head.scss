@@ -1,0 +1,115 @@
+@import "../../Styles/utilities/varaibles";
+@import "../../Styles/utilities/mixins";
+
+.Head {
+    display: grid;
+    grid-template-columns: auto 0.6fr;
+    margin: 2% 5% 2% 5%;
+    padding-top: 5%;
+    @include Tablet{
+        padding-top: 0;
+    }
+    @include Mobile {
+        margin: 3% 3% 3% 3%;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+
+    &__intro-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: fit-content;
+
+        @include Mobile {
+            order: 2;
+        }
+    }
+
+    &__intro {
+        font-size: 4vw;
+        font-family: 'Roboto Slab', serif;
+        color: $primary_color;
+        letter-spacing: 0.5vw;
+        line-height: 6vw;
+        animation: fadein 4s;
+
+        @include Tablet {
+            font-size: 6vw;
+            line-height: 8vw;
+        }
+
+        @include Mobile {
+            margin-top: -30vw;
+            font-size: 10vw;
+            line-height: 14vw;
+        }
+    }
+
+    @keyframes fadein {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
+    }
+
+    &__name {
+        color: $hovering_color;
+        font-weight: bolder;
+    }
+
+    &__talk {
+        display: flex;
+        font-size: 2vw;
+        border-radius: 10%;
+        font-weight: bold;
+        color: $secondary_color;
+        background-color: $primary_color;
+        padding: 2vw;
+        outline: none;
+        margin-top: 5%;
+        border: 1px solid $primary_color;
+        box-shadow: 5px 10px gray;
+
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+
+        }
+
+        @include Tablet {
+            font-size: 5vw;
+        }
+
+        @include Mobile {
+            font-size: 7vw;
+        }
+    }
+
+    &__img-container {
+        display: flex;
+        height: 62%;
+
+        @include Tablet {
+            height: auto;
+        }
+
+        @include Mobile {
+            height: 60%;
+        }
+    }
+
+    &__me {
+        display: flex;
+        border-radius: 30%;
+        width: 100%;
+
+        @include Mobile {
+            margin-top: 2%;
+        }
+    }
+}

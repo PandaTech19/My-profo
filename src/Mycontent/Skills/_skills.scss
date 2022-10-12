@@ -1,0 +1,141 @@
+@import "../../Styles/utilities/varaibles";
+@import "../../Styles/utilities/mixins";
+
+.Skill {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 5% 2% 5%;
+
+    @include Mobile {
+        margin: 3% 3% 3% 3%;
+    }
+
+    &__title-container {
+        display: flex;
+        align-items: center;
+        column-gap: 4%;
+
+        @include Mobile {
+            column-gap: 6%;
+        }
+    }
+
+    &__title {
+        font-size: 5vw;
+        font-family: 'Gemunu Libre', sans-serif;
+        color: $primary_color;
+
+        @include Tablet {
+            font-size: 7vw;
+        }
+
+        @include Mobile {
+            font-size: 15vw;
+        }
+    }
+
+    &__gear {
+        width: 3vw;
+        height: 4vw;
+        color: $hovering_color;
+        animation: rotate 4s linear infinite;
+
+        @include Tablet {
+            width: 5vw;
+            height: 5vw;
+        }
+
+        @include Mobile {
+            width: 9vw;
+            height: 9vw;
+        }
+    }
+
+    @keyframes rotate {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+
+    &__info-container {
+        display: flex;
+        margin-top: 4%;
+    }
+
+    &__info {
+        font-size: 2.5vw;
+        letter-spacing: 0.3vw;
+        text-align: center;
+        font-weight: lighter;
+        font-family: 'Roboto Slab', serif;
+        color: $primary_color;
+
+        @include Tablet {
+            font-size: 3.5vw;
+        }
+
+        @include Mobile {
+            font-size: 5.5vw;
+            line-height: 8vw;
+        }
+
+    }
+
+    &__techno-container {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        width: 100%;
+        margin-top: 5%;
+        row-gap: 3vw;
+        justify-content: space-between;
+
+        @include Tablet {
+            grid-template-columns: repeat(2, auto);
+            justify-content: space-evenly;
+        }
+
+        @include Mobile {
+            grid-template-columns: repeat(2, auto);
+            justify-content: space-evenly;
+            margin-top: 5%;
+        }
+    }
+
+    &__techno-box {
+        display: flex;
+        width: 50%;
+    }
+
+    &__techno {
+        position: relative;
+        width: 12vw;
+        height: 12vw;
+        padding: 2%;
+        border: 5px solid $primary_color;
+        border-radius: 50%;
+        
+
+        &:hover {
+            transform: scale(1.1);
+        }
+        @include Tablet {
+            width: 16vw;
+            height: 16vw;
+        }
+
+        @include Mobile {
+            width: 25vw;
+            height: 25vw;
+        }
+    }
+
+    &__boot {
+        @extend .Skill__techno;
+        border-radius: 50%;
+        border: 5px solid $primary_color;
+    }
+}

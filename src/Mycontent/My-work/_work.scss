@@ -1,0 +1,240 @@
+@import "../../Styles/utilities/varaibles";
+@import "../../Styles/utilities/mixins";
+
+.Work {
+    display: flex;
+    flex-direction: column;
+    margin: 10% 5% 2% 5%;
+
+    @include Mobile {
+        margin: 3% 3% 3% 3%;
+
+    }
+
+    &__head-container {
+        display: flex;
+        align-items: center;
+        column-gap: 4%;
+        margin-bottom: 5%;
+
+        @include Mobile {
+            column-gap: 6%;
+        }
+    }
+
+    &__head {
+        font-size: 5vw;
+        font-family: 'Gemunu Libre', sans-serif;
+        color: $primary_color;
+
+        @include Tablet {
+            font-size: 7vw;
+        }
+
+        @include Mobile {
+            font-size: 15vw;
+        }
+    }
+
+    &__gif {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0.5vw;
+        width: 5vw;
+        height: 5vw;
+
+        @include Tablet {
+            width: 10vw;
+            height: 8vw;
+        }
+
+        @include Mobile {
+            width: 20vw;
+            height: 15vw;
+        }
+    }
+
+    &__title-container {
+        display: flex;
+        flex-direction: column;
+        font-size: 2.5vw;
+        margin-bottom: 5%;
+        text-align: center;
+        letter-spacing: 0.3vw;
+        font-weight: lighter;
+        font-family: 'Roboto Slab', serif;
+        color: $primary_color;
+
+        @include Tablet {
+            font-size: 3.5vw;
+        }
+
+        @include Mobile {
+            font-size: 5.5vw;
+            line-height: 8vw;
+        }
+    }
+
+    &__proj-container {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+
+    &__proj-box {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 10%;
+
+        @include Tablet {
+            flex-direction: column;
+        }
+
+        @include Mobile {
+            flex-direction: column;
+        }
+    }
+
+    &__proj-pic-container {
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+
+        @include Tablet {
+            margin-bottom: 5%;
+        }
+
+        @include Mobile {
+            margin-bottom: 10%;
+        }
+    }
+
+    &__proj-link {
+        display: flex;
+        width: fit-content;
+
+        @include Tablet {
+            align-items: center;
+            justify-content: center;
+        }
+
+        @include Mobile {
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+    &__proj-pic {
+        display: block;
+        width: 80%;
+        background-color: #fff;
+        height: auto;
+        border-radius: 5%;
+        border: 5px solid $hovering_color;
+        box-shadow: 5px 10px gray;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+
+        @include Tablet {
+            width: 90%;
+        }
+
+        @include Mobile {
+            width: 100%;
+            border: 3px solid $hovering_color;
+        }
+    }
+
+    &__info-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    &__proj-title-container {
+        display: flex;
+    }
+
+    &__proj-title {
+        font-size: 5vw;
+        font-family: 'Gemunu Libre', sans-serif;
+        color: $hovering_color;
+
+        @include Mobile {
+            font-size: 10vw;
+        }
+    }
+
+    &__proj-gif {
+        margin-left: 5%;
+        width: 7vw;
+        height: 5vw;
+
+        @include Tablet {
+            margin-top: -1%;
+            width: 10vw;
+            height: 8vw;
+        }
+
+        @include Mobile {
+            margin-top: -1%;
+            width: 20vw;
+            height: 12vw;
+        }
+    }
+
+    &__proj-gif-uk {
+        width: 5vw;
+        height: 3vw;
+        margin-left: 5%;
+        margin-top: 3.5%;
+
+        @include Tablet {
+            width: 6vw;
+            height: 4vw;
+            margin-top: 1%;
+        }
+
+        @include Mobile {
+            width: 8vw;
+            height: 7vw;
+            margin-top: 3%;
+        }
+    }
+
+    &__proj-gif-pop {
+        @extend .Work__proj-gif;
+
+        @include Tablet {
+            margin-top: -3%;
+            width: 10vw;
+            height: 8vw;
+        }
+
+        @include Mobile {
+            margin-top: -5%;
+            width: 20vw;
+            height: 15vw;
+        }
+    }
+
+    &__proj-info {
+        font-size: 2.5vw;
+        margin-top: 2%;
+        letter-spacing: 0.3vw;
+        font-weight: lighter;
+        font-family: 'Roboto Slab', serif;
+        color: $primary_color;
+
+        @include Tablet {
+            font-size: 3.5vw;
+        }
+
+        @include Mobile {
+            font-size: 5.5vw;
+            line-height: 8vw;
+        }
+    }
+}
