@@ -65,7 +65,7 @@ export default function Contact() {
 
                     />
                     <button
-                        className="Contact-me__sub"
+                        className="Contact-me__sub pageclip-form__submit"
                         type="submit"
                         style={{
                             background: theme ? `${Light}` : "",
