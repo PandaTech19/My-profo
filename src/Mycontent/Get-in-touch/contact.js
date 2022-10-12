@@ -3,7 +3,7 @@ import { AppContext } from "../../Mycontext/context";
 import Phone from "./phone.gif";
 
 export default function Contact() {
-    const { theme } = useContext(AppContext);
+    const { theme, dark, Light } = useContext(AppContext);
 
 
     return (
@@ -40,8 +40,8 @@ export default function Contact() {
                         type="text"
                         className="Contact-me__inputs"
                         style={{
-                            borderBottom: theme ? "2px solid rgb(217, 217, 217)" : "",
-                            color: theme ? "rgb(217, 217, 217)" : ""
+                            borderBottom: theme ? `2px solid ${Light}` : "",
+                            color: theme ? `${Light}` : ""
                         }}
                         required
                     />
@@ -50,8 +50,8 @@ export default function Contact() {
                         type="email"
                         className="Contact-me__inputs"
                         style={{
-                            borderBottom: theme ? "2px solid rgb(217, 217, 217)" : "",
-                            color: theme ? "rgb(217, 217, 217)" : ""
+                            borderBottom: theme ? `2px solid ${Light}` : "",
+                            color: theme ? `${Light}` : ""
                         }}
                         required
                     />
@@ -59,10 +59,21 @@ export default function Contact() {
                         className="Contact-me__message"
                         placeholder="Ask Me Anything"
                         style={{
-                            borderBottom: theme ? "2px solid rgb(217, 217, 217)" : "",
-                            color: theme ? "rgb(217, 217, 217)" : ""
+                            borderBottom: theme ? `2px solid ${Light}` : "",
+                            color: theme ? `${Light}` : ""
                         }}
+
                     />
+                    <button
+                        className="Contact-me__sub"
+                        type="submit"
+                        style={{
+                            background: theme ? `${Light}` : "",
+                            color: theme ? `${dark}` : ""
+                        }}
+                    >
+                        Send
+                    </button>
                 </form>
             </div>
 

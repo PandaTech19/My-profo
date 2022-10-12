@@ -89,6 +89,7 @@
     &__form-container {
         display: flex;
         margin-top: 8%;
+        padding-bottom: 5%;
     }
 
     &__form {
@@ -138,7 +139,35 @@
         }
     }
 
-    &__message{
+    &__message {
         @extend .Contact-me__inputs;
+    }
+
+    &__sub {
+        display: flex;
+        font-size: 2vw;
+        font-weight: bold;
+        padding: 2%;
+        width: fit-content;
+        border-radius: 4%;
+        color: $secondary_color;
+        background-color: $primary_color;
+        outline: none;
+        border: 1px solid $primary_color;
+        box-shadow: 5px 10px gray;
+        cursor: pointer;
+
+        &:hover {
+            transform: scale(1.1);
+
+        }
+
+        @include Tablet {
+            font-size: 5vw;
+        }
+
+        @include Mobile {
+            font-size: 7vw;
+        }
     }
 }
