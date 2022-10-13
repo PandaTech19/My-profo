@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { AppContext } from "../../Mycontext/context";
 import Panda from "./po-wave.gif";
 import Bow from "./bow.gif";
-import Flag from "./flag.gif";
 import Work from "./work.gif";
 import Html from "./html.jpg";
 import Css from "./css.jpg";
@@ -44,14 +43,8 @@ export default function About() {
                     />
                     <br /><br />
                 </div>
-                My name Samer, {age} years old, from Lebanon, and I'm thriving future Front-end-developer.
+                My name Samer, {age} years old and I'm thriving future Front-end-developer.
                 <div className="About__info-box">
-                    <img
-                        src={Flag}
-                        alt=""
-                        className="About__gif"
-                    />
-                    <br /><br />
                 </div>
                 Creating websites and using different technologies helps me to get a lot of experience and a great way
                 to open many doors to creating different types of projects with different languages and not be limited.
