@@ -119,7 +119,7 @@ export default function Work() {
             <div className="Work__proj-container">
                 <div className="Work__proj-box">
                     <div className="Work__proj-pic-container">
-                        <a className="Work__proj-link" href="https://movie-picker-me.vercel.app" target="__blank">
+                        <a className="Work__proj-link" href="https://stocks-azure.vercel.app" target="__blank">
                             <img
                                 src={Stocks}
                                 alt="The project to drone store"
