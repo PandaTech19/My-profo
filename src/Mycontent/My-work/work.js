@@ -7,6 +7,8 @@ import Study_ua from "./studyuk.jpg";
 import Uk_flag from "./uk-flag.webp"
 import Movie_pk from "./film.jpg";
 import Pop from "./pop.gif";
+import Stocks from "./stocks.jpg";
+import Crypto from "./crypto.gif";
 import Old_pf from "./old-prof.jpg";
 import Old from "./old-pf.gif";
 
@@ -117,6 +119,30 @@ export default function Work() {
             <div className="Work__proj-container">
                 <div className="Work__proj-box">
                     <div className="Work__proj-pic-container">
+                        <a className="Work__proj-link" href="https://movie-picker-me.vercel.app" target="__blank">
+                            <img
+                                src={Stocks}
+                                alt="The project to drone store"
+                                className="Work__proj-pic"
+                            />
+                        </a>
+                    </div>
+                    <div className="Work__info-container">
+                        <div className="Work__proj-title-container">
+                            <h1 className="Work__proj-title">Stocks</h1>
+                            <img src={Crypto} alt="A floating drone" className="Work__proj-gif" />
+                        </div>
+                        <p style={{ color: theme ? `${Light}` : "" }}
+                            className="Work__proj-info">
+                            A freelancing website a created for a client that involves crypto currencies.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+            <div className="Work__proj-container">
+                <div className="Work__proj-box">
+                    <div className="Work__proj-pic-container">
                         <a className="Work__proj-link" href="https://my-protfolio-me.vercel.app" target="__blank">
                             <img
                                 src={Old_pf}
@@ -130,8 +156,7 @@ export default function Work() {
                             <h1 className="Work__proj-title">Old profolio</h1>
                             <img src={Old} alt="A floating drone" className="Work__proj-gif" />
                         </div>
-                        <p
-                            style={{ color: theme ? `${Light}` : "" }}
+                        <p style={{ color: theme ? `${Light}` : "" }}
                             className="Work__proj-info">
                             This my first profolio i've built long time ago, and you can see the improvements already.
                         </p>
