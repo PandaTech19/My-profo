@@ -6,9 +6,11 @@
     grid-template-columns: auto 0.6fr;
     margin: 2% 5% 2% 5%;
     padding-top: 5%;
-    @include Tablet{
+
+    @include Tablet {
         padding-top: 0;
     }
+
     @include Mobile {
         margin: 3% 3% 3% 3%;
         grid-template-columns: auto;
@@ -61,6 +63,23 @@
         font-weight: bolder;
     }
 
+    &__btn-con {
+        display: flex;
+        align-items: center;
+        margin-top: 2%;
+        column-gap: 8%;
+
+        @include Tablet{
+            margin-top: 5%;
+        }
+
+
+        @include Mobile{
+            justify-content: space-evenly;
+            margin-top: 5%;
+        }
+    }
+
     &__talk {
         display: flex;
         font-size: 2vw;
@@ -82,11 +101,27 @@
         }
 
         @include Tablet {
-            font-size: 5vw;
+            font-size: 3vw;
         }
 
         @include Mobile {
-            font-size: 7vw;
+            font-size: 6.9vw;
+        }
+    }
+
+    &__resume {
+        @extend .Head__talk;
+        font-size: 1.6vw;
+        border-radius: 5%;
+        color: $secondary_color;
+        background: $hovering_color;
+
+        @include Tablet {
+            font-size: 2.5vw;
+        }
+
+        @include Mobile {
+            font-size: 6vw;
         }
     }
 

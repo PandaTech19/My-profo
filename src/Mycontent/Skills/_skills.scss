@@ -107,21 +107,22 @@
 
     &__techno-box {
         display: flex;
-        width: 50%;
+        width: 100%;
+        height: 100%;
     }
 
     &__techno {
-        position: relative;
         width: 12vw;
         height: 12vw;
         padding: 2%;
         border: 5px solid $primary_color;
         border-radius: 50%;
-        
+        position: relative;
 
         &:hover {
             transform: scale(1.1);
         }
+
         @include Tablet {
             width: 16vw;
             height: 16vw;

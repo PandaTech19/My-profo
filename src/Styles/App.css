@@ -293,7 +293,25 @@
   color: #1072D5;
   font-weight: bolder;
 }
-.Head__talk {
+.Head__btn-con {
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+  -moz-column-gap: 8%;
+       column-gap: 8%;
+}
+@media (max-width: 768px) and (min-width: 425px) {
+  .Head__btn-con {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 425px) {
+  .Head__btn-con {
+    justify-content: space-evenly;
+    margin-top: 5%;
+  }
+}
+.Head__talk, .Head__resume {
   display: flex;
   font-size: 2vw;
   border-radius: 10%;
@@ -307,17 +325,33 @@
   box-shadow: 5px 10px gray;
   cursor: pointer;
 }
-.Head__talk:hover {
+.Head__talk:hover, .Head__resume:hover {
   transform: scale(1.1);
 }
 @media (max-width: 768px) and (min-width: 425px) {
-  .Head__talk {
-    font-size: 5vw;
+  .Head__talk, .Head__resume {
+    font-size: 3vw;
   }
 }
 @media (max-width: 425px) {
-  .Head__talk {
-    font-size: 7vw;
+  .Head__talk, .Head__resume {
+    font-size: 6.9vw;
+  }
+}
+.Head__resume {
+  font-size: 1.6vw;
+  border-radius: 5%;
+  color: rgb(227, 245, 247);
+  background: #1072D5;
+}
+@media (max-width: 768px) and (min-width: 425px) {
+  .Head__resume {
+    font-size: 2.5vw;
+  }
+}
+@media (max-width: 425px) {
+  .Head__resume {
+    font-size: 6vw;
   }
 }
 .Head__img-container {
@@ -455,15 +489,16 @@
 }
 .Skill__techno-box {
   display: flex;
-  width: 50%;
+  width: 100%;
+  height: 100%;
 }
 .Skill__techno, .Skill__boot {
-  position: relative;
   width: 12vw;
   height: 12vw;
   padding: 2%;
   border: 5px solid rgb(21, 21, 21);
   border-radius: 50%;
+  position: relative;
 }
 .Skill__techno:hover, .Skill__boot:hover {
   transform: scale(1.1);

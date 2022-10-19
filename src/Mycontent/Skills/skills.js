@@ -12,6 +12,9 @@ import Bootstrap from "./bootstrap.jpg";
 import Mysql from "./mysql.jpg";
 import Nodejs from "./nodejs.jpg";
 import Sanity from "./sanity.jpg";
+import Vercel from "./vercel.jpg";
+import Netlify from "./netlify.jpg";
+import Git from "./git.jpg"
 
 export default function Skill() {
     const { theme, Light } = useContext(AppContext);
@@ -138,6 +141,36 @@ export default function Skill() {
                         <img
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Sanity}
+                            alt=""
+                            className="Skill__techno"
+                        />
+                    </a>
+                </div>
+                <div className="Skill__techno-box">
+                    <a href="https://vercel.com" target="_blank">
+                        <img
+                            style={{ border: theme ? `5px solid ${Light}` : "" }}
+                            src={Vercel}
+                            alt=""
+                            className="Skill__techno"
+                        />
+                    </a>
+                </div>
+                <div className="Skill__techno-box">
+                    <a href="https://www.netlify.com" target="_blank">
+                        <img
+                            style={{ border: theme ? `5px solid ${Light}` : "" }}
+                            src={Netlify}
+                            alt=""
+                            className="Skill__techno"
+                        />
+                    </a>
+                </div>
+                <div className="Skill__techno-box">
+                    <a href="https://git-scm.com" target="_blank">
+                        <img
+                            style={{ border: theme ? `5px solid ${Light}` : "" }}
+                            src={Git}
                             alt=""
                             className="Skill__techno"
                         />
