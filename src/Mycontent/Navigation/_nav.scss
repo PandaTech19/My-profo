@@ -22,12 +22,14 @@
 
     &__logo-container {
         display: block;
+        justify-content: center;
+        align-items: center;
     }
 
     &__logo {
         width: 5vw;
         border-radius: 50%;
-
+        border: 4px solid black;
 
         @include Tablet {
             width: 10vw;

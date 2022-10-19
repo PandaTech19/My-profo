@@ -6,7 +6,7 @@ import Logo from "./logo.jpg";
 import Menu from "./burger.jpg";
 import Close from "./cross.jpg";
 import { RiSunFill } from "react-icons/ri";
-import { BsMoonFill } from "react-icons/bs";
+import { BsMoonFill } from "react-icons/bs"; 
 
 
 export default function Nav() {
@@ -20,6 +20,7 @@ export default function Nav() {
                             src={Logo}
                             alt="My logo site"
                             className="Navbar__logo"
+                            style={{ border: theme ? `4px solid ${Light}` : "" }}
                         />
                     </Link>
                 </div>
