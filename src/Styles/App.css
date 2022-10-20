@@ -1093,6 +1093,7 @@
 }
 .Foot__logo {
   width: 5vw;
+  border-radius: 10%;
 }
 @media (max-width: 768px) and (min-width: 425px) {
   .Foot__logo {
