@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { AppContext } from "./Mycontext/context";
-import Navigation from "./Mycontent/Navigation/nav";
+import Navbar from "./Mycontent/Navigation/nav";
 import Head from "./Mycontent/Introduction/head";
 import Skills from "./Mycontent/Skills/skills";
 import Work from "./Mycontent/My-work/work";
@@ -46,7 +46,7 @@ export default function App() {
   return (
     <AppContext.Provider value={{ change, theme, dark, Light }}>
       <body style={{ background: theme ? `${dark}` : "" }} className="App">
-        <Navigation />
+        <Navbar />
         <Routes>
           <Route exact path='/' element={
             <>

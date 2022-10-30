@@ -33,7 +33,8 @@ export default function Work() {
                     style={{ color: theme ? `${Light}` : "" }}
                     className="Work__title">
                     Do you want a beautiful responsive website on all devices,
-                    if thats the case then i'm your guy.
+                    if thats the case then i'm your guy.<br/>
+                    <span className="Work__press">Press The Image To Preview The Site</span>
                 </p>
             </div>
             <div className="Work__proj-container">

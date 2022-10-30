@@ -75,6 +75,22 @@
         }
     }
 
+    &__press {
+        margin-top: 3%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: $hovering_color;
+
+        @include Tablet{
+            margin-top: 5%;
+        }
+
+        @include Mobile{
+            margin-top: 8%;
+        }
+    }
+
     &__proj-container {
         display: flex;
         flex-direction: column;

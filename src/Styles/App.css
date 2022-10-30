@@ -602,6 +602,23 @@
     line-height: 8vw;
   }
 }
+.Work__press {
+  margin-top: 3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #1072D5;
+}
+@media (max-width: 768px) and (min-width: 425px) {
+  .Work__press {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 425px) {
+  .Work__press {
+    margin-top: 8%;
+  }
+}
 .Work__proj-container {
   display: flex;
   flex-direction: column;
