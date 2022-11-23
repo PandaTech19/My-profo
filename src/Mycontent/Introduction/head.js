@@ -14,7 +14,7 @@ export default function Head() {
                     <br />Web developer.
                 </h1>
                 <div className="Head__btn-con">
-                    <a href="https://drive.google.com/file/d/13uwAZ40MS5uxHU-bAD5rGTR_WLNuhpzX/view?usp=sharing" target="_blank">
+                    <a href="https://drive.google.com/file/d/115h-nfxYKHRmNFJve_QvP9KFHlvZOmJK/view?usp=sharing" target="_blank">
                         <button
                             style={{
                                 color: theme ? `${Light}` : "",
