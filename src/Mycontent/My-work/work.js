@@ -135,7 +135,7 @@ export default function Work() {
                         </div>
                         <p style={{ color: theme ? `${Light}` : "" }}
                             className="Work__proj-info">
-                            A freelancing website a created for a client that involves crypto currencies.
+                            A freelancing website i created for a client that involves crypto currencies.
                         </p>
 
                     </div>
