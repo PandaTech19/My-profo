@@ -21,8 +21,7 @@
     }
 
     &__logo-container {
-        display: block;
-        justify-content: center;
+        display: flex;
         align-items: center;
     }
 
@@ -36,9 +35,66 @@
         }
 
         @include Mobile {
-
             width: 15vw;
+        }
+    }
 
+    &__test{
+        display: flex;
+        align-items: center;
+        border-bottom: 3px solid $primary_color;
+        width: 11vw;
+        column-gap: 10%;
+        margin-left: 20%;
+
+        @include Tablet{
+            width: 15vw;
+            margin-left: 10%;
+        }
+
+        @include Mobile{
+            width: 35vw;
+            margin-left: 10%;
+        }
+    }
+
+    &__btn{
+        display: flex;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        font-size: 2vw;
+        font-weight: bold;
+        font-family: 'Gemunu Libre', sans-serif;
+
+        @include Tablet {
+            font-size: 3.5vw;
+        }
+
+        @include Mobile {
+            font-size: 8vw;
+        }
+
+        &--blue{
+            color: $hovering_color;
+        }
+
+        &:hover{
+            color: $hovering_color;
+            transform: scale(1.1);
+        }
+    }
+
+    &__slash{
+        display: flex;
+        font-size: 2vw;
+
+        @include Tablet {
+            font-size: 3vw;
+        }
+
+        @include Mobile {
+            font-size: 8vw;
         }
     }
 
@@ -62,11 +118,11 @@
 
     &__links {
         color: $primary_color;
+        font-weight: bold;
 
         &:hover {
             color: $hovering_color !important;
             transform: scale(1.1);
-            font-weight: bold;
         }
     }
 

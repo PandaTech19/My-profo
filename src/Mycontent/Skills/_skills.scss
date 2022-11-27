@@ -15,8 +15,14 @@
         align-items: center;
         column-gap: 4%;
 
+
         @include Mobile {
             column-gap: 6%;
+        }
+
+        &--arb {
+
+            flex-direction: row-reverse;
         }
     }
 
@@ -64,6 +70,11 @@
     &__info-container {
         display: flex;
         margin-top: 4%;
+
+        &--arb {
+            flex-direction: row-reverse;
+
+        }
     }
 
     &__info {
@@ -81,6 +92,10 @@
         @include Mobile {
             font-size: 5.5vw;
             line-height: 8vw;
+        }
+
+        &--arb {
+            letter-spacing: 0;
         }
 
     }

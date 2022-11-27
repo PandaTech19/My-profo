@@ -19,6 +19,10 @@
         @include Mobile {
             column-gap: 6%;
         }
+
+        &--arb{
+            flex-direction: row-reverse;
+        }
     }
 
     &__head {
@@ -112,6 +116,10 @@
         @include Mobile {
             font-size: 5.5vw;
             row-gap: 15vw;
+        }
+
+        &--arb{
+            letter-spacing: 0;
         }
     }
 

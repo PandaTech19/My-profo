@@ -23,20 +23,15 @@ export default function Nav() {
                             style={{ border: theme ? `4px solid ${Light}` : "" }}
                         />
                     </Link>
-                    <div className="Navbar__test"  style={{ borderBottom: theme ? `3px solid ${Light}` : "" }}>
-                        <button onClick={() => Eng()} className="Navbar__btn Navbar__btn--blue">Eng</button>
-                        <span
-                            style={{ color: theme ? `${Light}` : "" }}
-                            className="Navbar__slash"
-                        >
-                            /
-                        </span>
+                    <div className="Navbar__test" style={{ borderBottom: theme ? `3px solid ${Light}` : "" }}>
                         <button
-                            onClick={() => Arb()}
                             style={{ color: theme ? `${Light}` : "" }}
-                            className="Navbar__btn">
-                            Arb
+                            onClick={() => Eng()}
+                            className="Navbar__btn ">
+                            Eng
                         </button>
+                        <span className="Navbar__slash" style={{ color: theme ? `${Light}` : "" }} >/</span>
+                        <button onClick={() => Arb()} className="Navbar__btn Navbar__btn--blue">Arb</button>
                     </div>
                 </div>
                 <div className="Navbar__link-container">
@@ -45,27 +40,27 @@ export default function Nav() {
                         className="Navbar__links"
                         smooth
                         to="/#Skills">
-                        Skills
+                        المهارات
                     </HashLink>
                     <HashLink
                         style={{ color: theme ? `${Light}` : "" }}
                         className="Navbar__links"
                         smooth
                         to="/#projects">
-                        Projects
+                        المشاريع
                     </HashLink>
                     <HashLink
                         style={{ color: theme ? `${Light}` : "" }}
                         className="Navbar__links"
                         smooth
                         to="/#about">
-                        About me
+                        عني انا
                     </HashLink>
                     <Link
                         style={{ color: theme ? `${Light}` : "" }}
                         className="Navbar__links"
                         smooth to="/CONTACTS">
-                        Contact me
+                        تواصل معي
                     </Link>
                 </div>
                 <div id="Burger" className="Navbar__burger">
@@ -100,23 +95,23 @@ export default function Nav() {
                     <a
                         className="Menu__links"
                         href="/#Skills">
-                        Skills
+                        المهارات
                     </a>
                     <a
                         className="Menu__links"
                         href="#projects">
-                        Projects
+                        المشاريع
                     </a>
                     <a
                         className="Menu__links"
                         smooth
                         href="#about">
-                        About me
+                        عني انا
                     </a>
                     <a
                         className="Menu__links"
                         href="/CONTACTS">
-                        Contact me
+                        تواصل معي
                     </a>
                 </div>
             </section>
