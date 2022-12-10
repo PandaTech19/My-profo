@@ -52,73 +52,91 @@ export default function App() {
 
 
   //This function switches between Arabic and english 
-  const [page, setPage] = useState(
-    <>
-      <Navbar />
-      <Routes>
-        <Route exact path='/' element={
-          <>
-            <Head />
-            <section className='divider' />
-            <Skills />
-            <section className='divider' />
-            <Work />
-            <section className='divider' />
-            <About />
-          </>
-        } />
-        <Route exact path="/CONTACTS" element={<Contact_me />} />
-      </Routes>
-      <Footer />
-    </>
-  );
+  // const [page, setPage] = useState(
+  //   <>
+  //     <Navbar />
+  //     <Routes>
+  //       <Route exact path='/' element={
+  //         <>
+  //           <Head />
+  //           <section className='divider' />
+  //           <Skills />
+  //           <section className='divider' />
+  //           <Work />
+  //           <section className='divider' />
+  //           <About />
+  //         </>
+  //       } />
+  //       <Route exact path="/CONTACTS" element={<Contact_me />} />
+  //     </Routes>
+  //     <Footer />
+  //   </>
+  // );
 
-  const Eng = () => setPage(
-    <>
-      <Navbar />
-      <Routes>
-        <Route exact path='/' element={
-          <>
-            <Head />
-            <section className='divider' />
-            <Skills />
-            <section className='divider' />
-            <Work />
-            <section className='divider' />
-            <About />
-          </>
-        } />
-        <Route exact path="/CONTACTS" element={<Contact_me />} />
-      </Routes>
-      <Footer />
-    </>
-  );
+  // const Eng = () => setPage(
+  //   <>
+  //     <Navbar />
+  //     <Routes>
+  //       <Route exact path='/' element={
+  //         <>
+  //           <Head />
+  //           <section className='divider' />
+  //           <Skills />
+  //           <section className='divider' />
+  //           <Work />
+  //           <section className='divider' />
+  //           <About />
+  //         </>
+  //       } />
+  //       <Route exact path="/CONTACTS" element={<Contact_me />} />
+  //     </Routes>
+  //     <Footer />
+  //   </>
+  // );
 
-  const Arb = () => setPage(
-    <>
-      <Navbar_arb />
-      <Routes>
-        <Route exact path='/' element={
-          <>
-            <Head_arb />
-            <section className='divider' />
-            <Skills_arb />
-            <section className='divider' />
-            <Work_arb />
-            <section className='divider' />
-            <About_arb />
-          </>
-        } />
-        <Route exact path="/CONTACTS" element={<Contact_arb/>} />
-      </Routes>
-      <Footer_arb />
-    </>
-  );
+  // const Arb = () => setPage(
+  //   <>
+  //     <Navbar_arb />
+  //     <Routes>
+  //       <Route exact path='/' element={
+  //         <>
+  //           <Head_arb />
+  //           <section className='divider' />
+  //           <Skills_arb />
+  //           <section className='divider' />
+  //           <Work_arb />
+  //           <section className='divider' />
+  //           <About_arb />
+  //         </>
+  //       } />
+  //       <Route exact path="/CONTACTS" element={<Contact_arb/>} />
+  //     </Routes>
+  //     <Footer_arb />
+  //   </>
+  // );
+
+  // {page}
+//, page, Eng, Arb 
 
   return (
-    <AppContext.Provider value={{ change, theme, dark, Light, page, Eng, Arb }}>
+    <AppContext.Provider value={{ change, theme, dark, Light}}>
       <body style={{ background: theme ? `${dark}` : "" }} className="App">
-        {page}
+        <Navbar />
+        <Routes>
+          <Route exact path='/' element={
+            <>
+              <Head />
+              <section className='divider' />
+              <Skills />
+              <section className='divider' />
+              <Work />
+              <section className='divider' />
+              <About />
+            </>
+          } />
+          <Route exact path="/CONTACTS" element={<Contact_me />} />
+        </Routes>
+        <Footer />
       </body>
     </AppContext.Provider>
   );

@@ -10,7 +10,7 @@ import { BsMoonFill } from "react-icons/bs";
 
 
 export default function Nav() {
-    const { theme, change, Light, Eng, Arb } = useContext(AppContext);
+    const { theme, change, Light} = useContext(AppContext);
     return (
         <div className="All-conatainer">
             <div className="Navbar">
@@ -23,7 +23,7 @@ export default function Nav() {
                             style={{ border: theme ? `4px solid ${Light}` : "" }}
                         />
                     </Link>
-                    <div className="Navbar__test"  style={{ borderBottom: theme ? `3px solid ${Light}` : "" }}>
+                    {/* <div className="Navbar__test"  style={{ borderBottom: theme ? `3px solid ${Light}` : "" }}>
                         <button onClick={() => Eng()} className="Navbar__btn Navbar__btn--blue">Eng</button>
                         <span
                             style={{ color: theme ? `${Light}` : "" }}
@@ -37,7 +37,7 @@ export default function Nav() {
                             className="Navbar__btn">
                             Arb
                         </button>
-                    </div>
+                    </div> */}
                 </div>
                 <div className="Navbar__link-container">
                     <HashLink
