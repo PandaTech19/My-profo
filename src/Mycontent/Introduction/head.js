@@ -1,6 +1,5 @@
 import { useContext } from "react";
 import { AppContext } from "../../Mycontext/context";
-import { Link } from "react-router-dom";
 import Me from "./me.jpg";
 import { HashLink } from "react-router-hash-link";
 
