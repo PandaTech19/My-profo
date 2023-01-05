@@ -21,7 +21,7 @@ import './Styles/App.css';
 export default function App() {
 
   //The colors of light and dark mode
-  const dark = "#212121";
+  const dark = "#232323";
   const Light = "rgb(227, 245, 247)"
 
   //This function is used to switch between dark mode and light mode

@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { AppContext } from "../../Mycontext/context";
-import Me from "./me.jpg";
+import Me from "./samer.jpeg";
 import { HashLink } from "react-router-hash-link";
 
 export default function Head() {
@@ -41,6 +41,7 @@ export default function Head() {
                     src={Me}
                     alt="A picture of myself"
                     className="Head__me"
+                    style={{ outline: theme ? "5px solid white" : "" }}
                 />
             </div>
         </div >

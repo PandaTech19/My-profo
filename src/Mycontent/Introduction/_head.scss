@@ -4,7 +4,7 @@
 .Head {
     display: grid;
     grid-template-columns: auto 0.6fr;
-    margin: 2% 5% 2% 5%;
+    margin: 2% 5% 5% 5%;
     padding-top: 5%;
 
     &--arb {
@@ -27,8 +27,14 @@
         width: 100%;
         height: fit-content;
 
+        @include Tablet{
+            width: fit-content;
+            padding-right: 2vw;
+        }
+
         @include Mobile {
             order: 2;
+            margin-top: 25vh;
         }
 
         &--arb {
@@ -182,13 +188,17 @@
     &__img-container {
         display: flex;
         height: 62%;
+        margin-top: -5%;
 
         @include Tablet {
             height: auto;
+            align-items: center;
+            margin: 0;
+            grid-column: none;
         }
 
         @include Mobile {
-            height: 60%;
+            height: auto;
         }
     }
 
@@ -196,8 +206,11 @@
         display: flex;
         border-radius: 30%;
         width: 100%;
+        outline: 5px solid rgba(0, 0, 0, 0.373);
+        height: fit-content;
 
         @include Mobile {
+            height: auto;
             margin-top: 2%;
         }
     }
