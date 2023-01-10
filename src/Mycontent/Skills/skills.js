@@ -11,10 +11,13 @@ import Sass from "./sass.jpg";
 import Bootstrap from "./bootstrap.jpg";
 import Mysql from "./mysql.jpg";
 import Nodejs from "./nodejs.jpg";
+import Express from "./express.png"
 import Sanity from "./sanity.jpg";
 import Vercel from "./vercel.jpg";
 import Netlify from "./netlify.jpg";
 import Git from "./git.jpg"
+import Jira from "./jira.png"
+
 
 export default function Skill() {
     const { theme, Light } = useContext(AppContext);
@@ -41,7 +44,7 @@ export default function Skill() {
                         <img
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Html}
-                            alt=""
+                            alt="The picture of the html icon"
                             className="Skill__techno"
                         />
                     </a>
@@ -51,7 +54,7 @@ export default function Skill() {
                         <img
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Css}
-                            alt=""
+                            alt="The picture of the css icon"
                             className="Skill__techno"
                         />
                     </a>
@@ -61,7 +64,7 @@ export default function Skill() {
                         <img
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Javascript}
-                            alt=""
+                            alt="The picture of the javascript icon"
                             className="Skill__techno"
                         />
                     </a>
@@ -71,7 +74,7 @@ export default function Skill() {
                         <img
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Reactjs}
-                            alt=""
+                            alt="The picture of the React js icon"
                             className="Skill__techno"
                         />
                     </a>
@@ -81,7 +84,7 @@ export default function Skill() {
                         <img
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Nextjs}
-                            alt=""
+                            alt="The picture of the Next js icon"
                             className="Skill__techno"
                         />
                     </a>
@@ -91,7 +94,7 @@ export default function Skill() {
                         <img
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Tailwind}
-                            alt=""
+                            alt="The picture of the Tailwindcss icon"
                             className="Skill__techno"
                         />
                     </a>
@@ -101,7 +104,7 @@ export default function Skill() {
                         <img
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Sass}
-                            alt=""
+                            alt="The picture of the Sass icon"
                             className="Skill__techno"
                         />
                     </a>
@@ -111,7 +114,7 @@ export default function Skill() {
                         <img
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Bootstrap}
-                            alt=""
+                            alt="The picture of the Bootstrap icon"
                             className="Skill__techno Skill__boot"
                         />
                     </a>
@@ -121,7 +124,7 @@ export default function Skill() {
                         <img
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Mysql}
-                            alt=""
+                            alt="The picture of the Mysql icon"
                             className="Skill__techno"
                         />
                     </a>
@@ -131,7 +134,17 @@ export default function Skill() {
                         <img
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Nodejs}
-                            alt=""
+                            alt="The picture of the Node js icon"
+                            className="Skill__techno"
+                        />
+                    </a>
+                </div>
+                <div className="Skill__techno-box">
+                    <a href="https://expressjs.com" target="_blank">
+                        <img
+                            style={{ border: theme ? `5px solid ${Light}` : "" }}
+                            src={Express}
+                            alt="The picture of the Express js icon"
                             className="Skill__techno"
                         />
                     </a>
@@ -141,7 +154,7 @@ export default function Skill() {
                         <img
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Sanity}
-                            alt=""
+                            alt="The picture of the Sanity IO icon"
                             className="Skill__techno"
                         />
                     </a>
@@ -151,7 +164,7 @@ export default function Skill() {
                         <img
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Vercel}
-                            alt=""
+                            alt="The picture of the Vercel icon"
                             className="Skill__techno"
                         />
                     </a>
@@ -161,7 +174,7 @@ export default function Skill() {
                         <img
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Netlify}
-                            alt=""
+                            alt="The picture of the Netlify icon"
                             className="Skill__techno"
                         />
                     </a>
@@ -171,7 +184,17 @@ export default function Skill() {
                         <img
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Git}
-                            alt=""
+                            alt="The picture of the GIt icon"
+                            className="Skill__techno"
+                        />
+                    </a>
+                </div>
+                <div className="Skill__techno-box">
+                    <a href="https://www.atlassian.com/software/jira?&aceid=&adposition=&adgroup=137008204930&campaign=18455741485&creative=639487372768&device=c&keyword=jira&matchtype=e&network=g&placement=&ds_kids=p73363671953&ds_e=GOOGLE&ds_eid=700000001558501&ds_e1=GOOGLE&gclsrc=ds" target="_blank">
+                        <img
+                            style={{ border: theme ? `5px solid ${Light}` : "" }}
+                            src={Jira}
+                            alt="The picture of the Jira icon"
                             className="Skill__techno"
                         />
                     </a>
