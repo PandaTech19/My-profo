@@ -17,7 +17,7 @@ import Vercel from "./vercel.jpg";
 import Netlify from "./netlify.jpg";
 import Git from "./git.jpg"
 import Jira from "./jira.png"
-
+import Figma from "./figma.png"
 
 export default function Skill() {
     const { theme, Light } = useContext(AppContext);
@@ -195,6 +195,16 @@ export default function Skill() {
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Jira}
                             alt="The picture of the Jira icon"
+                            className="Skill__techno"
+                        />
+                    </a>
+                </div>
+                <div className="Skill__techno-box">
+                    <a href="https://www.figma.com" target="_blank">
+                        <img
+                            style={{ border: theme ? `5px solid ${Light}` : "" }}
+                            src={Figma}
+                            alt="The picture of the figma icon"
                             className="Skill__techno"
                         />
                     </a>
