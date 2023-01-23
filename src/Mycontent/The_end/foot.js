@@ -53,16 +53,24 @@ export default function End() {
             <div className="Foot__social-container">
                 <div className="Foot__created" style={{ color: theme ? `${dark}` : "" }}>©2022 Proudly created with React</div>
                 <div className="Foot__socials">
-                    <a href="https://www.linkedin.com/in/samer-timani-21b4b41b7" target="_blank">
+                    <a aria-label="This is a link to my linkedin"
+                        href="https://www.linkedin.com/in/samer-timani-21b4b41b7"
+                        target="_blank">
                         <AiFillLinkedin className="Foot__icon" style={{ color: theme ? `${dark}` : "" }} />
                     </a>
-                    <a href="https://github.com/Grimhunter9" target="_blank">
+                    <a aria-label="This is a link to my gmail"
+                        href="https://github.com/Grimhunter9"
+                        target="_blank">
                         <AiFillGithub className="Foot__icon" style={{ color: theme ? `${dark}` : "" }} />
                     </a>
-                    <a href="https://telegram.me/Grimhunter9"
+                    <a aria-label="This is a link to my telegram"
+                        href="https://telegram.me/Grimhunter9"
+                        target="_blank"
                     ><BsTelegram className="Foot__icon" style={{ color: theme ? `${dark}` : "" }} />
                     </a>
-                    <a href="https://www.instagram.com/sam_panda1999" target="_blank">
+                    <a aria-label="This is a link to my Instagram"
+                        href="https://www.instagram.com/sam_panda1999"
+                        target="_blank">
                         <AiFillInstagram className="Foot__icon" style={{ color: theme ? `${dark}` : "" }} />
                     </a>
                 </div>
