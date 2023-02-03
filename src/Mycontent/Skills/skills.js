@@ -10,6 +10,7 @@ import Tailwind from "./tailwind.jpg";
 import Sass from "./sass.jpg";
 import Bootstrap from "./bootstrap.jpg";
 import Mysql from "./mysql.jpg";
+import Firebase from "./firebase.png"
 import Nodejs from "./nodejs.jpg";
 import Express from "./express.png"
 import Sanity from "./sanity.jpg";
@@ -125,6 +126,16 @@ export default function Skill() {
                         <img
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Mysql}
+                            alt="The picture of the Mysql icon"
+                            className="Skill__techno"
+                        />
+                    </a>
+                </div>
+                <div className="Skill__techno-box">
+                    <a href="http://firebase.google.com" target="_blank">
+                        <img
+                            style={{ border: theme ? `5px solid ${Light}` : "" }}
+                            src={Firebase}
                             alt="The picture of the Mysql icon"
                             className="Skill__techno"
                         />
