@@ -11,7 +11,7 @@ import Nextjs from "./next.jpg";
 import Tailwind from "./tailwind.jpg";
 import Sass from "./sass.jpg";
 import Bootstrap from "./bootstrap.jpg";
-import Mysql from "./mysql.jpg";
+import Firebase from "./firebase.png"
 import Nodejs from "./nodejs.jpg";
 import Sanity from "./sanity.jpg";
 
@@ -43,7 +43,7 @@ export default function About() {
                     />
                     <br /><br />
                 </div>
-                My name is Samer, {age} years old and I'm thriving future Front-end-developer.
+                My name is Samer, I'm an ambitious and self-motivated Front-end-developer.
                 <div className="About__info-box">
                 </div>
                 Creating websites and using different technologies helps me to get a lot of experience and a great way
@@ -126,7 +126,7 @@ export default function About() {
                     />
                     <br /><br />
                 </div>
-                For now I'm studying (Node js) as a backend language and inserting data by using (Mysql).
+                 I'm Using (Node js) as a backend language and implementing Firebase for its many great features.
                 <div className="About__info-box">
                     <img
                         style={{ border: theme ? `5px solid ${Light}` : "" }}
@@ -136,14 +136,12 @@ export default function About() {
                     />
                     <img
                         style={{ border: theme ? `5px solid ${Light}` : "" }}
-                        src={Mysql}
+                        src={Firebase}
                         alt=""
                         className="About__tech"
                     />
                     <br /><br />
                 </div>
-                In the end i would love to work with a tech company that will improve my skills and to work
-                in a team to reach more heights in the years to come.
             </div>
         </div>
     );
