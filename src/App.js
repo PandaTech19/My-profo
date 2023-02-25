@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import { AppContext } from "./Mycontext/context";
 import Navbar from "./Mycontent/Navigation/nav";
 import Head from "./Mycontent/Introduction/head";
@@ -34,6 +36,8 @@ export default function App() {
   //This function is used to remove the burger menu on route change
   const location = useLocation();//This function detects your current url
   useEffect(() => {
+    AOS.init({ duration: 1000, once: false });
+
     let x = document.getElementById("Burger")
     if (location.pathname === "/CONTACTS") {
       x.style.display = "none"
@@ -53,7 +57,7 @@ export default function App() {
         <Routes>
           <Route exact path='/' element={
             <>
-              <Head />
+              <Head/>
               <section className='divider' />
               <Skills />
               <section className='divider' />

@@ -32,7 +32,7 @@ export default function About() {
                     className="About__gif"
                 />
             </div>
-            <div className="About__title-container" style={{ color: theme ? `${Light}` : "" }}>
+            <div className="About__title-container" style={{ color: theme ? `${Light}` : "" }} data-aos="zoom-in" data-aos-duration="2000">
                 So we've reached the end dear viewer, Now let me formally Introduce myself.
                 <div className="About__info-box">
                     <img

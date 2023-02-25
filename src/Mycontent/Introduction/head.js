@@ -6,7 +6,9 @@ import { HashLink } from "react-router-hash-link";
 export default function Head() {
     const { theme, dark, Light } = useContext(AppContext);
     return (
-        <div className="Head">
+        <div  data-aos-duration="2000"
+        data-aos="fade-up"
+     data-aos-anchor-placement="top-center"  className="Head">
             <div className="Head__intro-container">
                 <h1 style={{ color: theme ? "white" : "" }} className="Head__intro">Greetings,
                     <br />Iam <span className="Head__name">Samer</span>,

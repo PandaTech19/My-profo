@@ -20,7 +20,7 @@ export default function Contact() {
                     className="Contact-me__gif"
                 />
             </div>
-            <div className="Contact-me__title-container">
+            <div className="Contact-me__title-container" data-aos="fade-right" data-aos-duration="2000">
                 <p
                     style={{ color: theme ? "rgb(217, 217, 217)" : "" }}
                     className="Contact-me__title">
@@ -30,7 +30,7 @@ export default function Contact() {
                     or using the form below 👇
                 </p>
             </div>
-            <div className="Contact-me__form-container">
+            <div className="Contact-me__form-container" data-aos="zoom-in" data-aos-duration="2000">
                 <form
                     action="https://send.pageclip.co/waHDjruVHuDXfRjJGMQfBTvkiy63ofDN/My-first-form"
                     class="pageclip-form"

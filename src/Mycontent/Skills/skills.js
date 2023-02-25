@@ -34,14 +34,14 @@ export default function Skill() {
                 </h1>
                 <BsFillGearFill className="Skill__gear" />
             </div>
-            <div className="Skill__info-container">
+            <div className="Skill__info-container" data-aos="fade-right" data-aos-duration="2000">
                 <p
                     style={{ color: theme ? `${Light}` : "" }}
                     className="Skill__info">
                     Over the years i learned different types of technologies here are some of them
                 </p>
             </div>
-            <div className="Skill__techno-container">
+            <div className="Skill__techno-container" data-aos="zoom-in" data-aos-duration="2000" >
                 <div className="Skill__techno-box">
                     <a href="https://www.w3schools.com/html" target="_blank">
                         <img

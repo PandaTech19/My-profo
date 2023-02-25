@@ -39,7 +39,7 @@ export default function Work() {
             </div>
             <div className="Work__proj-container">
                 <div className="Work__proj-box">
-                    <div className="Work__proj-pic-container">
+                    <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
                         <a className="Work__proj-link" href="https://store-next-rosy.vercel.app" target="__blank">
                             <img
                                 src={Drone_st}
@@ -48,7 +48,7 @@ export default function Work() {
                             />
                         </a>
                     </div>
-                    <div className="Work__info-container">
+                    <div className="Work__info-container" data-aos="fade-left" data-aos-duration="2000">
                         <div className="Work__proj-title-container">
                             <h1 className="Work__proj-title">Drone Store</h1>
                             <img src={Drone_gf} alt="A floating drone" className="Work__proj-gif" />
@@ -65,7 +65,7 @@ export default function Work() {
             </div>
             <div className="Work__proj-container">
                 <div className="Work__proj-box">
-                    <div className="Work__proj-pic-container">
+                    <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
                         <a className="Work__proj-link" href="https://study-in-uk.vercel.app" target="__blank">
                             <img
                                 src={Study_ua}
@@ -74,7 +74,7 @@ export default function Work() {
                             />
                         </a>
                     </div>
-                    <div className="Work__info-container">
+                    <div className="Work__info-container" data-aos="fade-left" data-aos-duration="2000">
                         <div className="Work__proj-title-container">
                             <h1 className="Work__proj-title">Study In Ukraine</h1>
                             <img src={Uk_flag} alt="A floating drone" className="Work__proj-gif-uk" />
@@ -92,7 +92,7 @@ export default function Work() {
             </div>
             <div className="Work__proj-container">
                 <div className="Work__proj-box">
-                    <div className="Work__proj-pic-container">
+                    <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
                         <a className="Work__proj-link" href="https://movie-picker-me.vercel.app" target="__blank">
                             <img
                                 src={Movie_pk}
@@ -101,7 +101,7 @@ export default function Work() {
                             />
                         </a>
                     </div>
-                    <div className="Work__info-container">
+                    <div className="Work__info-container" data-aos="fade-left" data-aos-duration="2000">
                         <div className="Work__proj-title-container">
                             <h1 className="Work__proj-title">Movie picker</h1>
                             <img src={Pop} alt="A floating drone" className="Work__proj-gif-pop" />
@@ -119,7 +119,7 @@ export default function Work() {
             </div>
             <div className="Work__proj-container">
                 <div className="Work__proj-box">
-                    <div className="Work__proj-pic-container">
+                    <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
                         <a className="Work__proj-link" href="https://stocks-azure.vercel.app" target="__blank">
                             <img
                                 src={Stocks}
@@ -128,7 +128,7 @@ export default function Work() {
                             />
                         </a>
                     </div>
-                    <div className="Work__info-container">
+                    <div className="Work__info-container" data-aos="fade-left" data-aos-duration="2000">
                         <div className="Work__proj-title-container">
                             <h1 className="Work__proj-title">Stocks</h1>
                             <img src={Crypto} alt="A floating drone" className="Work__proj-gif" />
@@ -143,7 +143,7 @@ export default function Work() {
             </div>
             <div className="Work__proj-container">
                 <div className="Work__proj-box">
-                    <div className="Work__proj-pic-container">
+                    <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
                         <a className="Work__proj-link" href="https://my-protfolio-me.vercel.app" target="__blank">
                             <img
                                 src={Old_pf}
@@ -152,7 +152,7 @@ export default function Work() {
                             />
                         </a>
                     </div>
-                    <div className="Work__info-container">
+                    <div className="Work__info-container" data-aos="fade-left" data-aos-duration="2000">
                         <div className="Work__proj-title-container">
                             <h1 className="Work__proj-title">Old profolio</h1>
                             <img src={Old} alt="A floating drone" className="Work__proj-gif" />
