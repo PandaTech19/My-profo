@@ -44,3 +44,14 @@ a {
   flex-direction: column;
   box-sizing: border-box;
 }
+
+// .hello_flag{
+//   width: 50px;
+// }
+
+.cen{
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 50%;
+}

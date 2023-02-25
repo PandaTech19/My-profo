@@ -18,7 +18,6 @@ import Sanity from "./sanity.jpg";
 
 export default function About() {
     const { theme, Light } = useContext(AppContext);
-    let age = new Date().getFullYear() - 1999;
     return (
         <div id="about" className="About">
             <div className="About__head-container">

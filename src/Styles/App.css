@@ -125,7 +125,6 @@
 .Navbar__theme {
   display: flex;
   justify-content: end;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -136,8 +135,7 @@
   cursor: pointer;
 }
 .Navbar__icon:hover {
-  -webkit-animation: rotate 4s linear infinite;
-          animation: rotate 4s linear infinite;
+  animation: rotate 4s linear infinite;
 }
 @media (max-width: 768px) and (min-width: 425px) {
   .Navbar__icon {
@@ -149,14 +147,6 @@
   .Navbar__icon {
     width: 10vw;
     height: 10vw;
-  }
-}
-@-webkit-keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
   }
 }
 @keyframes rotate {
@@ -174,8 +164,7 @@
   cursor: pointer;
 }
 .Navbar__moon:hover {
-  -webkit-animation: swinging 1.5s linear infinite;
-          animation: swinging 1.5s linear infinite;
+  animation: swinging 1.5s linear infinite;
 }
 @media (max-width: 768px) and (min-width: 425px) {
   .Navbar__moon {
@@ -187,17 +176,6 @@
   .Navbar__moon {
     width: 10vw;
     height: 10vw;
-  }
-}
-@-webkit-keyframes swinging {
-  0% {
-    transform: rotate(20deg);
-  }
-  50% {
-    transform: rotate(-5deg);
-  }
-  100% {
-    transform: rotate(20deg);
   }
 }
 @keyframes swinging {
@@ -308,13 +286,11 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
 @media (max-width: 768px) and (min-width: 425px) {
   .Head__intro-container {
-    width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
     padding-right: 2vw;
@@ -343,8 +319,7 @@
   color: rgb(21, 21, 21);
   letter-spacing: 0.5vw;
   line-height: 6vw;
-  -webkit-animation: fadein 4s;
-          animation: fadein 4s;
+  animation: fadein 4s;
 }
 @media (max-width: 768px) and (min-width: 425px) {
   .Head__intro {
@@ -366,14 +341,6 @@
   .Head__intro--arb {
     font-size: 15vw;
     line-height: 20vw;
-  }
-}
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
   }
 }
 @keyframes fadein {
@@ -502,7 +469,6 @@
   border-radius: 30%;
   width: 100%;
   outline: 5px solid rgba(0, 0, 0, 0.373);
-  height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
 }
@@ -557,8 +523,7 @@
   width: 3vw;
   height: 4vw;
   color: #1072D5;
-  -webkit-animation: rotate 4s linear infinite;
-          animation: rotate 4s linear infinite;
+  animation: rotate 4s linear infinite;
 }
 @media (max-width: 768px) and (min-width: 425px) {
   .Skill__gear {
@@ -803,7 +768,6 @@
 }
 .Work__proj-link {
   display: flex;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1236,9 +1200,6 @@
 .Contact-me__inputs:focus::-moz-placeholder, .Contact-me__message:focus::-moz-placeholder {
   color: #1072D5 !important;
 }
-.Contact-me__inputs:focus:-ms-input-placeholder, .Contact-me__message:focus:-ms-input-placeholder {
-  color: #1072D5 !important;
-}
 .Contact-me__inputs:focus::placeholder, .Contact-me__message:focus::placeholder {
   color: #1072D5 !important;
 }
@@ -1255,7 +1216,6 @@
   font-size: 2vw;
   font-weight: bold;
   padding: 2%;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   border-radius: 4%;
@@ -1436,7 +1396,6 @@
 
 a {
   text-decoration: none;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -1461,4 +1420,11 @@ a {
   height: auto;
   flex-direction: column;
   box-sizing: border-box;
+}
+
+.cen {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  width: 50%;
 }/*# sourceMappingURL=App.css.map */

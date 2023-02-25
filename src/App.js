@@ -2,19 +2,12 @@ import React, { useState, useEffect } from 'react';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import { AppContext } from "./Mycontext/context";
 import Navbar from "./Mycontent/Navigation/nav";
-import Navbar_arb from "./Mycontent/Navigation/nav-arb";
 import Head from "./Mycontent/Introduction/head";
-import Head_arb from "./Mycontent/Introduction/head_arb";
 import Skills from "./Mycontent/Skills/skills";
-import Skills_arb from "./Mycontent/Skills/skills_arb";
 import Work from "./Mycontent/My-work/work";
-import Work_arb from "./Mycontent/My-work/work_arb";
 import About from "./Mycontent/About-me/about"
-import About_arb from "./Mycontent/About-me/about_arb";
 import Contact_me from "./Mycontent/Get-in-touch/contact";
-import Contact_arb from "./Mycontent/Get-in-touch/contact_arb";
 import Footer from "./Mycontent/The_end/foot";
-import Footer_arb from "./Mycontent/The_end/foot_arb";
 /***************************************************************************************/
 import './Styles/App.css';
 
@@ -51,75 +44,10 @@ export default function App() {
   }, [location]);
 
 
-  //This function switches between Arabic and english 
-  // const [page, setPage] = useState(
-  //   <>
-  //     <Navbar />
-  //     <Routes>
-  //       <Route exact path='/' element={
-  //         <>
-  //           <Head />
-  //           <section className='divider' />
-  //           <Skills />
-  //           <section className='divider' />
-  //           <Work />
-  //           <section className='divider' />
-  //           <About />
-  //         </>
-  //       } />
-  //       <Route exact path="/CONTACTS" element={<Contact_me />} />
-  //     </Routes>
-  //     <Footer />
-  //   </>
-  // );
 
-  // const Eng = () => setPage(
-  //   <>
-  //     <Navbar />
-  //     <Routes>
-  //       <Route exact path='/' element={
-  //         <>
-  //           <Head />
-  //           <section className='divider' />
-  //           <Skills />
-  //           <section className='divider' />
-  //           <Work />
-  //           <section className='divider' />
-  //           <About />
-  //         </>
-  //       } />
-  //       <Route exact path="/CONTACTS" element={<Contact_me />} />
-  //     </Routes>
-  //     <Footer />
-  //   </>
-  // );
-
-  // const Arb = () => setPage(
-  //   <>
-  //     <Navbar_arb />
-  //     <Routes>
-  //       <Route exact path='/' element={
-  //         <>
-  //           <Head_arb />
-  //           <section className='divider' />
-  //           <Skills_arb />
-  //           <section className='divider' />
-  //           <Work_arb />
-  //           <section className='divider' />
-  //           <About_arb />
-  //         </>
-  //       } />
-  //       <Route exact path="/CONTACTS" element={<Contact_arb/>} />
-  //     </Routes>
-  //     <Footer_arb />
-  //   </>
-  // );
-
-  // {page}
-//, page, Eng, Arb 
 
   return (
-    <AppContext.Provider value={{ change, theme, dark, Light}}>
+    <AppContext.Provider value={{ change, theme, dark, Light }}>
       <body style={{ background: theme ? `${dark}` : "" }} className="App">
         <Navbar />
         <Routes>

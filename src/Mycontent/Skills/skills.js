@@ -4,6 +4,7 @@ import { BsFillGearFill } from "react-icons/bs";
 import Html from "./html.jpg";
 import Css from "./css.jpg";
 import Javascript from "./js.jpg";
+import Typescript from "./typescript.png"
 import Reactjs from "./react.jpg";
 import Nextjs from "./next.jpg";
 import Tailwind from "./tailwind.jpg";
@@ -67,6 +68,17 @@ export default function Skill() {
                             style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Javascript}
                             alt="The picture of the javascript icon"
+                            className="Skill__techno"
+                        />
+                    </a>
+                </div>
+               
+                <div className="Skill__techno-box">
+                    <a href="https://www.typescriptlang.org" target="_blank">
+                        <img
+                            style={{ border: theme ? `5px solid ${Light}` : "" }}
+                            src={Typescript}
+                            alt="The picture of the Typescript icon"
                             className="Skill__techno"
                         />
                     </a>
