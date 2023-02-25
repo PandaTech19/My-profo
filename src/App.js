@@ -59,11 +59,11 @@ export default function App() {
             <>
               <Head/>
               <section className='divider' />
-              <Skills />
+             <Skills />
               <section className='divider' />
               <Work />
               <section className='divider' />
-              <About />
+              <About /> 
             </>
           } />
           <Route exact path="/CONTACTS" element={<Contact_me />} />

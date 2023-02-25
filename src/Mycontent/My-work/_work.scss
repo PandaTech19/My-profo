@@ -3,8 +3,10 @@
 
 .Work {
     display: flex;
+    
     flex-direction: column;
     margin: 10% 5% 2% 5%;
+    overflow: hidden;
 
     @include Mobile {
         margin: 3% 3% 3% 3%;
