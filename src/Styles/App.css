@@ -484,7 +484,6 @@
   display: flex;
   flex-direction: column;
   margin: 2% 5% 2% 5%;
-  overflow: hidden;
 }
 @media (max-width: 425px) {
   .Skill {
