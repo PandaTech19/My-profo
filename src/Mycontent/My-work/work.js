@@ -37,9 +37,9 @@ export default function Work() {
                     <span className="Work__press">Press The Image To Preview The Site</span>
                 </p>
             </div>
-            <div className="Work__proj-container">
+            <div className="Work__proj-container" data-aos="fade-right" data-aos-duration="2000">
                 <div className="Work__proj-box">
-                    <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
+                    <div className="Work__proj-pic-container" >
                         <a className="Work__proj-link" href="https://store-next-rosy.vercel.app" target="__blank">
                             <img
                                 src={Drone_st}
@@ -48,7 +48,7 @@ export default function Work() {
                             />
                         </a>
                     </div>
-                    <div className="Work__info-container" data-aos="fade-left" data-aos-duration="2000">
+                    <div className="Work__info-container" >
                         <div className="Work__proj-title-container">
                             <h1 className="Work__proj-title">Drone Store</h1>
                             <img src={Drone_gf} alt="A floating drone" className="Work__proj-gif" />
