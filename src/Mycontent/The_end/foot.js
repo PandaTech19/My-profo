@@ -59,7 +59,7 @@ export default function End() {
                         <AiFillLinkedin className="Foot__icon" style={{ color: theme ? `${dark}` : "" }} />
                     </a>
                     <a aria-label="This is a link to my gmail"
-                        href="https://github.com/Grimhunter9"
+                        href="https://github.com/PandaTech19"
                         target="_blank">
                         <AiFillGithub className="Foot__icon" style={{ color: theme ? `${dark}` : "" }} />
                     </a>
