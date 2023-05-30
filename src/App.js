@@ -57,13 +57,13 @@ export default function App() {
         <Routes>
           <Route exact path='/' element={
             <>
-              <Head/>
+              <Head />
               <section className='divider' />
-             <Skills />
+              <Skills />
               <section className='divider' />
               <Work />
               <section className='divider' />
-              <About /> 
+              <About />
             </>
           } />
           <Route exact path="/CONTACTS" element={<Contact_me />} />
