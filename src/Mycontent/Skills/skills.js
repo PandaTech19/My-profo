@@ -43,203 +43,276 @@ export default function Skill() {
             </div>
             <div className="Skill__techno-container" data-aos="zoom-in" data-aos-duration="2000" >
                 <div className="Skill__techno-box">
-                    <a href="https://www.w3schools.com/html" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://www.w3schools.com/html"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Html}
                             alt="The picture of the html icon"
-                            className="Skill__techno"
+                            className="Skill__image"
                         />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://www.w3schools.com/css" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://www.w3schools.com/css"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Css}
                             alt="The picture of the css icon"
-                            className="Skill__techno"
+                            className="Skill__image"
                         />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://www.w3schools.com/js" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://www.w3schools.com/js"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Javascript}
                             alt="The picture of the javascript icon"
-                            className="Skill__techno"
+                            className="Skill__image"
                         />
                     </a>
                 </div>
-               
+
                 <div className="Skill__techno-box">
-                    <a href="https://www.typescriptlang.org" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://www.typescriptlang.org"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Typescript}
                             alt="The picture of the Typescript icon"
-                            className="Skill__techno"
+                            className="Skill__image"
                         />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://reactjs.org" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://reactjs.org"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Reactjs}
                             alt="The picture of the React js icon"
-                            className="Skill__techno"
+                            className="Skill__image"
                         />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://nextjs.org" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://nextjs.org"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Nextjs}
                             alt="The picture of the Next js icon"
-                            className="Skill__techno"
+                            className="Skill__image"
                         />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://tailwindcss.com" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://tailwindcss.com"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Tailwind}
                             alt="The picture of the Tailwindcss icon"
-                            className="Skill__techno"
+                            className="Skill__image"
                         />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://sass-lang.com" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://sass-lang.com"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Sass}
                             alt="The picture of the Sass icon"
-                            className="Skill__techno"
+                            className="Skill__image"
                         />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://getbootstrap.com" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://getbootstrap.com"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Bootstrap}
                             alt="The picture of the Bootstrap icon"
-                            className="Skill__techno Skill__boot"
+                            className="Skill__image Skill__boot"
                         />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://www.mysql.com" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://www.mysql.com"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Mysql}
                             alt="The picture of the Mysql icon"
-                            className="Skill__techno"
+                            className="Skill__image"
                         />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="http://firebase.google.com" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="http://firebase.google.com"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Firebase}
                             alt="The picture of the Mysql icon"
-                            className="Skill__techno"
+                            className="Skill__image Skill__boot "
                         />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://nodejs.org/en" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://nodejs.org/en"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Nodejs}
                             alt="The picture of the Node js icon"
-                            className="Skill__techno"
-                        />
+                            className="Skill__image" />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://expressjs.com" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://expressjs.com"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Express}
                             alt="The picture of the Express js icon"
-                            className="Skill__techno"
-                        />
+                            className="Skill__image" />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://www.sanity.io" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://www.sanity.io"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Sanity}
                             alt="The picture of the Sanity IO icon"
-                            className="Skill__techno"
-                        />
+                            className="Skill__image" />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://vercel.com" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://vercel.com"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Vercel}
                             alt="The picture of the Vercel icon"
-                            className="Skill__techno"
-                        />
+                            className="Skill__image" />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://www.cloudflare.com" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://www.cloudflare.com"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Cloudflare}
                             alt="The picture of the cloudflare icon"
-                            className="Skill__techno"
-                        />
+                            className="Skill__image" />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://www.netlify.com" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://www.netlify.com"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Netlify}
                             alt="The picture of the Netlify icon"
-                            className="Skill__techno"
-                        />
+                            className="Skill__image" />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://git-scm.com" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://git-scm.com"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Git}
                             alt="The picture of the GIt icon"
-                            className="Skill__techno"
-                        />
+                            className="Skill__image" />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://www.atlassian.com/software/jira?&aceid=&adposition=&adgroup=137008204930&campaign=18455741485&creative=639487372768&device=c&keyword=jira&matchtype=e&network=g&placement=&ds_kids=p73363671953&ds_e=GOOGLE&ds_eid=700000001558501&ds_e1=GOOGLE&gclsrc=ds" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://www.atlassian.com/software/jira?&aceid=&adposition=&adgroup=137008204930&campaign=18455741485&creative=639487372768&device=c&keyword=jira&matchtype=e&network=g&placement=&ds_kids=p73363671953&ds_e=GOOGLE&ds_eid=700000001558501&ds_e1=GOOGLE&gclsrc=ds"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Jira}
                             alt="The picture of the Jira icon"
-                            className="Skill__techno"
+                            className="Skill__image"
                         />
                     </a>
                 </div>
                 <div className="Skill__techno-box">
-                    <a href="https://www.figma.com" target="_blank">
+                    <a
+                        className="Skill__techno"
+                        href="https://www.figma.com"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
                         <img
-                            style={{ border: theme ? `5px solid ${Light}` : "" }}
                             src={Figma}
                             alt="The picture of the figma icon"
-                            className="Skill__techno"
+                            className="Skill__image"
                         />
                     </a>
                 </div>

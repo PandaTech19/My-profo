@@ -600,7 +600,11 @@
   width: 100%;
   height: 100%;
 }
-.Skill__techno, .Skill__boot {
+.Skill__image {
+  width: 100%;
+  height: 100%;
+}
+.Skill__techno {
   width: 12vw;
   height: 12vw;
   padding: 2%;
@@ -608,24 +612,23 @@
   border-radius: 50%;
   position: relative;
 }
-.Skill__techno:hover, .Skill__boot:hover {
+.Skill__techno:hover {
   transform: scale(1.1);
 }
 @media (max-width: 768px) and (min-width: 425px) {
-  .Skill__techno, .Skill__boot {
+  .Skill__techno {
     width: 16vw;
     height: 16vw;
   }
 }
 @media (max-width: 425px) {
-  .Skill__techno, .Skill__boot {
+  .Skill__techno {
     width: 25vw;
     height: 25vw;
   }
 }
 .Skill__boot {
   border-radius: 50%;
-  border: 5px solid rgb(21, 21, 21);
 }
 
 .Work {
