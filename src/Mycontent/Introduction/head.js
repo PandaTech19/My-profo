@@ -6,16 +6,16 @@ import { HashLink } from "react-router-hash-link";
 export default function Head() {
     const { theme, dark, Light } = useContext(AppContext);
     return (
-        <div  data-aos-duration="2000"
-        data-aos="fade-up"
-     data-aos-anchor-placement="top-center"  className="Head">
+        <div data-aos-duration="2000"
+            data-aos="fade-up"
+            data-aos-anchor-placement="top-center" className="Head">
             <div className="Head__intro-container">
                 <h1 style={{ color: theme ? "white" : "" }} className="Head__intro">Greetings,
                     <br />Iam <span className="Head__name">Samer</span>,
                     <br />Web developer.
                 </h1>
                 <div className="Head__btn-con">
-                    <a href="https://drive.google.com/file/d/1zxbJXcGnd0omsSVd_vUvpVqmA6Qr1AsC/view?usp=share_link" target="_blank">
+                    <a href="https://drive.google.com/file/d/1hsu2-oULWIFxyMA8NwYlVAMd_9RALgdX/view?usp=sharing" target="_blank">
                         <button
                             style={{
                                 color: theme ? `${Light}` : "",
