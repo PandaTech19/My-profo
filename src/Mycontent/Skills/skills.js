@@ -11,6 +11,8 @@ import Tailwind from "./tailwind.jpg";
 import Sass from "./sass.jpg";
 import Bootstrap from "./bootstrap.jpg";
 import Mysql from "./mysql.jpg";
+import MongoDb from "./mongo.png";
+import Mongoose from "./mongoose.png"
 import Firebase from "./firebase.png"
 import Nodejs from "./nodejs.jpg";
 import Express from "./express.png"
@@ -179,6 +181,34 @@ export default function Skill() {
                         <img
                             src={Mysql}
                             alt="The picture of the Mysql icon"
+                            className="Skill__image"
+                        />
+                    </a>
+                </div>
+                <div className="Skill__techno-box">
+                    <a
+                        className="Skill__techno"
+                        href="https://www.mongodb.com"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
+                        <img
+                            src={MongoDb}
+                            alt="The picture of the MongoDb icon"
+                            className="Skill__image"
+                        />
+                    </a>
+                </div>
+                <div className="Skill__techno-box">
+                    <a
+                        className="Skill__techno"
+                        href="https://mongoosejs.com"
+                        target="_blank"
+                        style={{ border: theme ? `5px solid ${Light}` : "" }}
+                    >
+                        <img
+                            src={Mongoose}
+                            alt="The picture of the Mongoose icon"
                             className="Skill__image"
                         />
                     </a>
