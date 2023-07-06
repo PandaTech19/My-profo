@@ -7,6 +7,8 @@ import Study_ua from "./studyuk.jpg";
 import Uk_flag from "./uk-flag.webp"
 import Movie_pk from "./film.jpg";
 import Pop from "./pop.gif";
+import Camera from "./Camera.gif";
+import Photography from "./thumbnail.png";
 import Stocks from "./stocks.jpg";
 import Crypto from "./crypto.gif";
 import Old_pf from "./old-prof.jpg";
@@ -33,10 +35,11 @@ export default function Work() {
                     style={{ color: theme ? `${Light}` : "" }}
                     className="Work__title">
                     Do you want a beautiful responsive website on all devices,
-                    if thats the case then i'm your guy.<br/>
+                    if thats the case then i'm your guy.<br />
                     <span className="Work__press">Press The Image To Preview The Site</span>
                 </p>
             </div>
+
             <div className="Work__proj-container" data-aos="fade-right" data-aos-duration="2000">
                 <div className="Work__proj-box">
                     <div className="Work__proj-pic-container" >
@@ -49,7 +52,7 @@ export default function Work() {
                         </a>
                     </div>
                     <div className="Work__info-container" >
-                        <div className="Work__proj-title-container">
+                        <div className="Work__proj-title-container" data-aos="fade-left">
                             <h1 className="Work__proj-title">Drone Store</h1>
                             <img src={Drone_gf} alt="A floating drone" className="Work__proj-gif" />
                         </div>
@@ -59,10 +62,10 @@ export default function Work() {
                             A project that i built using the Next js framework,
                             i've added some features such a Carousel and a modal.
                         </p>
-
                     </div>
                 </div>
             </div>
+            
             <div className="Work__proj-container">
                 <div className="Work__proj-box">
                     <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
@@ -90,6 +93,7 @@ export default function Work() {
                     </div>
                 </div>
             </div>
+
             <div className="Work__proj-container">
                 <div className="Work__proj-box">
                     <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
@@ -117,6 +121,34 @@ export default function Work() {
                     </div>
                 </div>
             </div>
+            
+            <div className="Work__proj-container">
+                <div className="Work__proj-box">
+                    <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
+                        <a className="Work__proj-link" href="https://photographer-profo.vercel.app" target="__blank">
+                            <img
+                                src={Photography}
+                                alt="The project to Photography"
+                                className="Work__proj-pic"
+                            />
+                        </a>
+                    </div>
+                    <div className="Work__info-container" data-aos="fade-left" data-aos-duration="2000">
+                        <div className="Work__proj-title-container">
+                            <h1 className="Work__proj-title">Photography</h1>
+                            <img src={Camera} alt="A Clicking camera" className="Work__proj-gif-camera" />
+                        </div>
+                        <p
+                            style={{ color: theme ? `${Light}` : "" }}
+                            className="Work__proj-info">
+                            Photography is a freelancing website created for a Photographer client that involves around the different types 
+                            of Photography and booking a Photography package for future clients.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+
             <div className="Work__proj-container">
                 <div className="Work__proj-box">
                     <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
@@ -141,6 +173,7 @@ export default function Work() {
                     </div>
                 </div>
             </div>
+
             <div className="Work__proj-container">
                 <div className="Work__proj-box">
                     <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
