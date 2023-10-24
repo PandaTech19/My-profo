@@ -20,14 +20,14 @@
             column-gap: 6%;
         }
 
-        &--arb{
+        &--arb {
             flex-direction: row-reverse;
         }
     }
 
     &__head {
         font-size: 5vw;
-        font-family: 'Gemunu Libre', sans-serif;
+        font-family: "Gemunu Libre", sans-serif;
         color: $primary_color;
 
         @include Tablet {
@@ -56,8 +56,6 @@
             height: 15vw;
         }
     }
-
-
 
     &__gif-work {
         @extend .About__gif;
@@ -94,8 +92,6 @@
         }
     }
 
-
-
     &__title-container {
         display: flex;
         flex-direction: column;
@@ -105,25 +101,35 @@
         text-align: center;
         letter-spacing: 0.3vw;
         font-weight: lighter;
-        font-family: 'Roboto Slab', serif;
+        font-family: "Roboto Slab", serif;
         color: $primary_color;
 
         @include Tablet {
             font-size: 3.5vw;
             row-gap: 10vw;
+
+            &--arb {
+                font-size: 4vw;
+            }
         }
 
         @include Mobile {
             font-size: 5.5vw;
             row-gap: 15vw;
+
+            &--arb {
+                font-size: 7vw;
+                font-weight: bold;
+            }
         }
 
-        &--arb{
+        &--arb {
             letter-spacing: 0;
+            direction: rtl;
         }
     }
 
-    &__info-box{
+    &__info-box {
         display: flex;
         column-gap: 2%;
         width: 100%;

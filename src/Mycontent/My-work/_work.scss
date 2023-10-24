@@ -38,6 +38,7 @@
         @include Mobile {
             font-size: 15vw;
         }
+
     }
 
     &__gif {
@@ -76,11 +77,18 @@
         @include Mobile {
             font-size: 5.5vw;
             line-height: 8vw;
+
+            &--arb{
+                font-size: 7vw;
+
+            }
         }
 
         &--arb {
             letter-spacing: 0;
+            direction: rtl;
             text-align: right;
+            
         }
     }
 
@@ -98,12 +106,6 @@
         @include Mobile {
             margin-top: 8%;
         }
-    }
-
-    &__proj-container {
-        display: flex;
-        flex-direction: column;
-        margin-top: 5%;
     }
 
     &__proj-box {
@@ -137,7 +139,6 @@
     &__proj-link {
         display: flex;
         width: fit-content;
-
         @include Tablet {
             align-items: center;
             justify-content: center;
@@ -176,6 +177,12 @@
         display: flex;
         flex-direction: column;
         width: 100%;
+
+        &--arb {
+            letter-spacing: 0;
+            direction: rtl;
+            text-align: right;
+        }
     }
 
     &__proj-title-container {
@@ -183,6 +190,8 @@
 
         &--arb {
             flex-direction: row-reverse;
+            background: red;
+
         }
     }
 
@@ -293,6 +302,11 @@
         @include Mobile {
             font-size: 5.5vw;
             line-height: 8vw;
+
+            &--arb{
+                font-size: 7vw;
+                font-weight: bold;
+            }
         }
 
         &--arb {

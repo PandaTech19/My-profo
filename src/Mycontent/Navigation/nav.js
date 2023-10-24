@@ -10,11 +10,13 @@ import { BsMoonFill } from "react-icons/bs";
 
 
 export default function Nav() {
-    const { theme, change, Light} = useContext(AppContext);
+    const { theme, change, Light, dark, t, i18n, isSpanish, handleLanguageChange } = useContext(AppContext);
+    const Navigation = t("Navigation_links", { returnObjects: true });
+
     return (
-        <div className="All-conatainer">
-            <div className="Navbar">
-                <div className="Navbar__logo-container">
+        <div className="All-container">
+            <div id="Navbar" className="Navbar">
+                <div id="Container" className="Navbar__logo-container">
                     <Link smooth to="/">
                         <img
                             src={Logo}
@@ -23,61 +25,37 @@ export default function Nav() {
                             style={{ border: theme ? `4px solid ${Light}` : "" }}
                         />
                     </Link>
-                    {/* <div className="Navbar__test"  style={{ borderBottom: theme ? `3px solid ${Light}` : "" }}>
-                        <button onClick={() => Eng()} className="Navbar__btn Navbar__btn--blue">Eng</button>
-                        <span
-                            style={{ color: theme ? `${Light}` : "" }}
-                            className="Navbar__slash"
-                        >
-                            /
-                        </span>
-                        <button
-                            onClick={() => Arb()}
-                            style={{ color: theme ? `${Light}` : "" }}
-                            className="Navbar__btn">
-                            Arb
-                        </button>
-                    </div> */}
                 </div>
-                <div className="Navbar__link-container">
+                <div className={`Navbar__link-container ${isSpanish ? "Navbar__link-container--esp" : ""}`}>
                     <HashLink
                         style={{ color: theme ? `${Light}` : "" }}
                         className="Navbar__links"
                         smooth
                         to="/#Skills">
-                        Skills
+                        {Navigation[0]}
                     </HashLink>
                     <HashLink
                         style={{ color: theme ? `${Light}` : "" }}
                         className="Navbar__links"
                         smooth
                         to="/#projects">
-                        Projects
+                        {Navigation[1]}
                     </HashLink>
                     <HashLink
                         style={{ color: theme ? `${Light}` : "" }}
                         className="Navbar__links"
                         smooth
                         to="/#about">
-                        About me
+                        {Navigation[2]}
                     </HashLink>
                     <Link
                         style={{ color: theme ? `${Light}` : "" }}
                         className="Navbar__links"
                         smooth to="/CONTACTS">
-                        Contact me
+                        {Navigation[3]}
                     </Link>
                 </div>
-                <div id="Burger" className="Navbar__burger">
-                    <a href="#menu">
-                        <img
-                            src={Menu}
-                            alt="The burger menu"
-                            className="Navbar__menu-hide"
-                        />
-                    </a>
-                </div>
-                <div className="Navbar__theme">
+                <div className="Navbar__theme_and-lang">
                     {
                         <nav onClick={() => change()}>
                             {theme === false ?
@@ -87,36 +65,71 @@ export default function Nav() {
                             }
                         </nav>
                     }
+                    <select
+                        className="Navbar__Select-con"
+                        onChange={handleLanguageChange}
+                        defaultValue={i18n.language}
+                        style={{ color: theme ? "" : `${Light}`, background: theme ? "" : `${dark}` }}
+                    >
+                        <option value="en">English</option>
+                        <option value="ar">Arabic</option>
+                        <option value="es">Spanish</option>
+                    </select>
+                </div>
+                {/* The Burger menu entering tablet */}
+                <div id="Burger" className="Navbar__burger">
+                    <a href="#menu">
+                        <img
+                            src={Menu}
+                            alt="The burger menu"
+                            className="Navbar__menu-hide"
+                        />
+                    </a>
                 </div>
             </div>
             <section id="menu" className="Menu">
-                <a href="/#">
-                    <img src={Close}
-                        alt="This closes the menu"
-                        className="Menu__close"
-                    />
-                </a>
+                <div className="Menu__contanier">
+                    <a href="/#">
+                        <img src={Close}
+                            alt="This closes the menu"
+                            className="Menu__close"
+                        />
+                    </a>
+                    <select
+                        className="Navbar__Select-con--mobile"
+                        onChange={handleLanguageChange}
+                        defaultValue={i18n.language}
+                        style={{ color: theme ? "" : `${Light}`, background: theme ? "" : `${dark}` }}
+                    >
+                        <option value="en">English</option>
+                        <option value="ar">Arabic</option>
+                        <option value="es">Spanish</option>
+                    </select>
+                </div>
+
                 <div className="Menu__link-container">
                     <a
                         className="Menu__links"
                         href="/#Skills">
-                        Skills
+                        {Navigation[0]}
                     </a>
                     <a
                         className="Menu__links"
                         href="#projects">
-                        Projects
+                        {Navigation[1]}
+
                     </a>
                     <a
                         className="Menu__links"
                         smooth
                         href="#about">
-                        About me
+                        {Navigation[2]}
+
                     </a>
                     <a
                         className="Menu__links"
                         href="/CONTACTS">
-                        Contact me
+                        {Navigation[3]}
                     </a>
                 </div>
             </section>

@@ -1,7 +1,6 @@
 @import "../../Styles/utilities/varaibles";
 @import "../../Styles/utilities/mixins";
 
-
 .All-container {
     display: flex;
     flex-direction: column;
@@ -10,19 +9,26 @@
 .Navbar {
     display: flex;
     justify-content: space-between;
-    margin: 2% 5% 2% 5%;
+    margin: 2% 5%;
     align-items: center;
 
-
+    @include Tablet {
+        margin: 2%;
+    }
 
     @include Mobile {
-        margin: 3% 3% 3% 3%;
-
+        margin: 3%;
+        // flex-direction: row-reverse;
     }
 
     &__logo-container {
         display: flex;
         align-items: center;
+
+        @include Mobile {
+            width: 100%;
+            justify-content: center;
+        }
     }
 
     &__logo {
@@ -39,76 +45,21 @@
         }
     }
 
-    &__test{
-        display: flex;
-        align-items: center;
-        border-bottom: 3px solid $primary_color;
-        width: 11vw;
-        column-gap: 10%;
-        margin-left: 20%;
-
-        @include Tablet{
-            width: 15vw;
-            margin-left: 10%;
-        }
-
-        @include Mobile{
-            width: 35vw;
-            margin-left: 10%;
-        }
-    }
-
-    &__btn{
-        display: flex;
-        border: none;
-        background: transparent;
-        cursor: pointer;
-        font-size: 2vw;
-        font-weight: bold;
-        font-family: 'Gemunu Libre', sans-serif;
-
-        @include Tablet {
-            font-size: 3.5vw;
-        }
-
-        @include Mobile {
-            font-size: 8vw;
-        }
-
-        &--blue{
-            color: $hovering_color;
-        }
-
-        &:hover{
-            color: $hovering_color;
-            transform: scale(1.1);
-        }
-    }
-
-    &__slash{
-        display: flex;
-        font-size: 2vw;
-
-        @include Tablet {
-            font-size: 3vw;
-        }
-
-        @include Mobile {
-            font-size: 8vw;
-        }
-    }
-
     &__link-container {
         display: flex;
-        width: 100%;
-        justify-content: flex-end;
-        margin-right: 5%;
-        font-family: 'Gemunu Libre', sans-serif;
+        margin: 0 auto;
+        width: 50%;
+        font-family: "Gemunu Libre", sans-serif;
         font-size: 2vw;
         column-gap: 5%;
+        // background-color: green;
 
         @include Tablet {
             font-size: 3.5vw;
+
+            &--esp {
+                font-size: 2.5vw;
+            }
         }
 
         @include Mobile {
@@ -117,7 +68,10 @@
     }
 
     &__links {
+        display: flex;
+        margin: 0 auto;
         color: $primary_color;
+        // background-color: pink;
         font-weight: bold;
 
         &:hover {
@@ -126,18 +80,51 @@
         }
     }
 
-    &__theme {
+    &__Select-con {
         display: flex;
-        justify-content: end;
-        width: fit-content;
+        outline: none;
+        padding: 10px;
+        border-radius: 10px;
+        font-size: 1.5vw;
+        cursor: pointer;
+        font-family: "Gemunu Libre", sans-serif;
+        font-weight: bolder;
 
+
+
+        @include Tablet {
+            font-size: 3vw;
+        }
+
+        @include Mobile {
+            display: none;
+
+            &--mobile {
+                display: flex;
+                width: 30%;
+                text-align: center;
+                margin-top: 2%;
+                outline: none;
+                border-radius: 15px;
+            }
+        }
     }
 
+    &__theme_and-lang {
+        display: flex;
+        width: fit-content;
+        column-gap: 5vw;
+
+        @include Mobile {
+            order: -1;
+        }
+    }
 
     &__icon {
         width: 3vw;
         height: 4vw;
         color: #fccb70;
+        margin-top: 5px;
         cursor: pointer;
 
         &:hover {
@@ -169,8 +156,8 @@
         width: 3vw;
         height: 4vw;
         color: #fccb70;
+        margin-top: 5px;
         cursor: pointer;
-
 
         &:hover {
             animation: swinging 1.5s linear infinite;
@@ -192,7 +179,7 @@
             }
 
             50% {
-                transform: rotate(-5deg)
+                transform: rotate(-5deg);
             }
 
             100% {
@@ -206,10 +193,8 @@
 
         @include Mobile {
             display: flex;
-            width: 100%;
+            width: fit-content;
             height: 100%;
-            margin-right: 5%;
-            justify-content: flex-end;
         }
     }
 

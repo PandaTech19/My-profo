@@ -25,22 +25,30 @@ import Jira from "./jira.png"
 import Figma from "./figma.png"
 
 export default function Skill() {
-    const { theme, Light } = useContext(AppContext);
+    const { t, isArabic, theme, Light } = useContext(AppContext);
+
     return (
         <div id="Skills" className="Skill">
-            <div className="Skill__title-container">
+            <div className={`Skill__title-container ${isArabic ? "Skill__title-container--arb" : ""}`}
+            >
                 <h1
                     style={{ color: theme ? `${Light}` : "" }}
-                    className="Skill__title">
-                    Skills
+                    className="Skill__title"
+                >
+                    {t("Skills_title")}
                 </h1>
                 <BsFillGearFill className="Skill__gear" />
             </div>
-            <div className="Skill__info-container" data-aos="fade-right" data-aos-duration="2000">
+            <div
+                className={`Skill__info-container ${isArabic ? "Skill__info-container--arb" : ""}`}
+                data-aos="fade-right"
+                data-aos-duration="2000"
+            >
                 <p
                     style={{ color: theme ? `${Light}` : "" }}
-                    className="Skill__info">
-                    Over the years i learned different types of technologies here are some of them
+                    className={`Skill__info ${isArabic ? "Skill__info--arb" : ""}`}
+                    >
+                    {t("Skills_info")}
                 </p>
             </div>
             <div className="Skill__techno-container" data-aos="zoom-in" data-aos-duration="2000" >

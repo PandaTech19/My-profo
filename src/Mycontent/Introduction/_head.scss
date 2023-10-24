@@ -6,18 +6,33 @@
     grid-template-columns: auto 0.6fr;
     margin: 2% 5% 5% 5%;
     padding-top: 5%;
-   
 
     &--arb {
-        grid-template-columns: 0.5fr auto;
+        display: grid;
+        grid-template-columns: 0.6fr auto;
+    }
+
+    &--esp{
+        grid-template-columns: auto 0.7fr ;
     }
 
     @include Tablet {
-        padding-top: 0;
+        grid-template-columns: auto 1fr;
+
+        &--arb {
+            grid-template-columns: repeat(2, 1fr);
+            margin: 2%;
+        }
+
+        &--esp{
+            grid-template-columns: repeat(2, 1fr);
+            margin: 3%;
+
+        }
     }
 
     @include Mobile {
-        margin: 3% 3% 3% 3%;
+        margin: 3%;
         grid-template-columns: auto;
         justify-content: center;
     }
@@ -28,7 +43,7 @@
         width: 100%;
         height: fit-content;
 
-        @include Tablet{
+        @include Tablet {
             width: fit-content;
             padding-right: 2vw;
         }
@@ -41,18 +56,22 @@
         &--arb {
             align-items: flex-end;
             text-align: right;
-            order: 2;
+            order: 1;
+            height: auto;
+            justify-content: space-between;
 
             @include Tablet {
-                height: auto;
-                justify-content: end;
+                width: auto;
+                padding: 0;
             }
         }
+
+    
     }
 
     &__intro {
         font-size: 4vw;
-        font-family: 'Roboto Slab', serif;
+        font-family: "Roboto Slab", serif;
         color: $primary_color;
         letter-spacing: 0.5vw;
         line-height: 6vw;
@@ -71,6 +90,9 @@
 
         &--arb {
             letter-spacing: 0;
+            direction: rtl;
+
+     
 
             @include Mobile {
                 font-size: 15vw;
@@ -104,15 +126,14 @@
             margin-top: 5%;
         }
 
-
         @include Mobile {
             margin-top: 5%;
         }
 
         &--arb {
-            justify-content: flex-end;
-            width: 70%;
-            align-items: initial;
+            width: 100%;
+            justify-content:end;
+            white-space: nowrap;
         }
     }
 
@@ -129,8 +150,6 @@
         margin-top: 5%;
         border: 1px solid $primary_color;
         box-shadow: 5px 10px gray;
-
-
 
         &:hover {
             transform: scale(1.1);
@@ -152,9 +171,8 @@
             }
 
             @include Mobile {
-                font-size: 7.5vw;
+                font-size: 6.5vw;
             }
-
         }
     }
 
@@ -184,22 +202,11 @@
                 font-size: 6vw;
             }
         }
-    }
 
-    &__img-container {
-        display: flex;
-        height: 62%;
-        margin-top: -5%;
-
-        @include Tablet {
-            height: auto;
-            align-items: center;
-            margin: 0;
-            grid-column: none;
-        }
-
-        @include Mobile {
-            height: auto;
+        &--esp{
+            @include Mobile {
+                font-size: 6.2vw;
+            }
         }
     }
 
@@ -209,6 +216,16 @@
         width: 100%;
         outline: 5px solid rgba(0, 0, 0, 0.373);
         height: fit-content;
+
+        @include Tablet {
+            &--arb {
+                background-color: purple;
+            }
+
+            &--esp{
+                height: 100%;
+            }
+        }
 
         @include Mobile {
             height: auto;

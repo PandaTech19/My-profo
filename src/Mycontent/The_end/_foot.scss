@@ -19,6 +19,9 @@
 
         @include Mobile {
             justify-content: start;
+            &--arb{
+                justify-content: end;
+            }
         }
     }
 
@@ -55,6 +58,10 @@
             flex-direction: column;
             font-size: 5.5vw;
             row-gap: 3vw;
+
+            &--arb{
+                align-items: end;
+            }
         }
     }
 
@@ -64,6 +71,10 @@
         &:hover {
             color: $hovering_color !important;
             transform: scale(1.1);
+        }
+
+        @include Mobile{
+            font-size: 7vw;
         }
     }
 
@@ -81,6 +92,10 @@
     &__created {
         color: $secondary_color;
         font-size: 1.5vw;
+
+        &--arb{
+            direction: rtl;
+        }
 
         @include Tablet {
             font-size: 2.5vw;
@@ -104,6 +119,7 @@
             justify-content: start;
             width: 100%;
             padding-bottom: 5%;
+            justify-content: center;
         }
     }
 

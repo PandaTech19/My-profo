@@ -79,11 +79,10 @@
         }
 
         &--arb{
-            align-items: flex-end;
+            direction: rtl;
             text-align: right;
             letter-spacing: 0;
-            width: 100%;
-            
+            width: 100%;            
         }
     }
 
@@ -104,7 +103,7 @@
         margin-bottom: 5%;
 
         &--arb{
-            flex-direction: row-reverse;
+            direction: rtl;
         }
     }
 

@@ -17,14 +17,16 @@ import Sanity from "./sanity.jpg";
 
 
 export default function About() {
-    const { theme, Light } = useContext(AppContext);
+    const { t, isArabic, theme, Light } = useContext(AppContext);
+    const Info = t("About_info", { returnObjects: true });
+
     return (
         <div id="about" className="About">
-            <div className="About__head-container">
+            <div className={`About__head-container ${isArabic ? "About__head-container--arb" : ""}`}>
                 <h1
                     style={{ color: theme ? `${Light}` : "" }}
                     className="About__head">
-                    About me
+                    {t("About_title")}
                 </h1>
                 <img
                     src={Panda}
@@ -32,8 +34,11 @@ export default function About() {
                     className="About__gif"
                 />
             </div>
-            <div className="About__title-container" style={{ color: theme ? `${Light}` : "" }} data-aos="zoom-in" data-aos-duration="2000">
-                So we've reached the end dear viewer, Now let me formally Introduce myself.
+            <div
+                className={`About__title-container ${isArabic ? "About__title-container--arb" : ""}`}
+                style={{ color: theme ? `${Light}` : "" }}
+                data-aos="zoom-in" data-aos-duration="2000">
+                {Info[0]}
                 <div className="About__info-box">
                     <img
                         src={Bow}
@@ -42,11 +47,10 @@ export default function About() {
                     />
                     <br /><br />
                 </div>
-                My name is Samer, I'm an ambitious and self-motivated Front-end-developer.
-                <div className="About__info-box">
-                </div>
-                Creating websites and using different technologies helps me to get a lot of experience and a great way
-                to open many doors to creating different types of projects with different languages and not be limited.
+                {Info[1]}
+                <section className="About__info-box">
+                </section>
+                {Info[2]}
                 <div className="About__info-box">
                     <img
                         src={Work}
@@ -55,7 +59,7 @@ export default function About() {
                     />
                     <br /><br />
                 </div>
-                At the beginning I started with the basics (Html , CSS , Js).
+                {Info[3]}
                 <div className="About__info-box">
                     <img
                         style={{ border: theme ? `5px solid ${Light}` : "" }}
@@ -77,7 +81,7 @@ export default function About() {
                     />
                     <br /><br />
                 </div>
-                But then I learned different types of frame works such as (React.js , Next Js).
+                {Info[4]}
                 <div className="About__info-box">
                     <img
                         style={{ border: theme ? `5px solid ${Light}` : "" }}
@@ -93,7 +97,7 @@ export default function About() {
                     />
                     <br /><br />
                 </div>
-                For styling I learned (Tailwind CSS , Sass , Bootstrap).
+                {Info[5]}
                 <div className="About__info-box">
                     <img
                         style={{ border: theme ? `5px solid ${Light}` : "" }}
@@ -115,7 +119,7 @@ export default function About() {
                     />
                     <br /><br />
                 </div>
-                I also used data storing and fetching from a platform I've been using for a while (Sanity Io).
+                {Info[6]}
                 <div className="About__info-box">
                     <img
                         style={{ border: theme ? `5px solid ${Light}` : "" }}
@@ -125,7 +129,7 @@ export default function About() {
                     />
                     <br /><br />
                 </div>
-                 I'm Using (Node js) as a backend language and implementing Firebase for its many great features.
+                {Info[7]}
                 <div className="About__info-box">
                     <img
                         style={{ border: theme ? `5px solid ${Light}` : "" }}

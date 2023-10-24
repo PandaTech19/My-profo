@@ -15,34 +15,42 @@ import Old_pf from "./old-prof.jpg";
 import Old from "./old-pf.gif";
 
 export default function Work() {
-    const { theme, Light } = useContext(AppContext);
+    const { t, isArabic, theme, Light } = useContext(AppContext);
+    const About = t("Work_info", { returnObjects: true });
+    const Name = t("Work_Project_name", { returnObjects: true });
+    const Info = t("Work_Project_info", { returnObjects: true });
+
     return (
         <div id="projects" className="Work">
-            <div className="Work__head-container">
+            <div className={`Work__head-container ${isArabic ? "Work__head-container--arb" : ""}`}
+            >
                 <h1
                     style={{ color: theme ? `${Light}` : "" }}
-                    className="Work__head">
-                    My Work
+                    className={`Work__head ${isArabic ? "Work__head--arb" : ""}`}
+                >
+                    {t("Work_title")}
                 </h1>
                 <img
                     src={myGif}
-                    alt=""
+                    alt="A light Blub flickering"
                     className="Work__gif"
                 />
             </div>
-            <div className="Work__title-container">
+            <div className={`Work__title-container ${isArabic ? "Work__title-container--arb" : ""}`}>
                 <p
                     style={{ color: theme ? `${Light}` : "" }}
                     className="Work__title">
-                    Do you want a beautiful responsive website on all devices,
-                    if thats the case then i'm your guy.<br />
-                    <span className="Work__press">Press The Image To Preview The Site</span>
+                    {About[0]}
+                    <br />
+                    <span className="Work__press">
+                        {About[1]}
+                    </span>
                 </p>
             </div>
 
-            <div className="Work__proj-container" data-aos="fade-right" data-aos-duration="2000">
+            <>
                 <div className="Work__proj-box">
-                    <div className="Work__proj-pic-container" >
+                    <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
                         <a className="Work__proj-link" href="https://store-next-rosy.vercel.app" target="__blank">
                             <img
                                 src={Drone_st}
@@ -51,22 +59,24 @@ export default function Work() {
                             />
                         </a>
                     </div>
-                    <div className="Work__info-container" >
+                    <div className={`Work__info-container ${isArabic ? "Work__info-container--arb" : ""}`}
+                        data-aos="fade-left"
+                        data-aos-duration="2000"
+                    >
                         <div className="Work__proj-title-container" data-aos="fade-left">
-                            <h1 className="Work__proj-title">Drone Store</h1>
+                            <h1 className="Work__proj-title">{Name[0]}</h1>
                             <img src={Drone_gf} alt="A floating drone" className="Work__proj-gif" />
                         </div>
                         <p
                             style={{ color: theme ? `${Light}` : "" }}
-                            className="Work__proj-info">
-                            A project that i built using the Next js framework,
-                            i've added some features such a Carousel and a modal.
+                            className={`Work__proj-info ${isArabic ? "Work__proj-info--arb" : ""}`}>
+                            {Info[0]}
                         </p>
                     </div>
                 </div>
-            </div>
-            
-            <div className="Work__proj-container">
+            </>
+
+            <>
                 <div className="Work__proj-box">
                     <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
                         <a className="Work__proj-link" href="https://study-in-uk.vercel.app" target="__blank">
@@ -77,24 +87,23 @@ export default function Work() {
                             />
                         </a>
                     </div>
-                    <div className="Work__info-container" data-aos="fade-left" data-aos-duration="2000">
-                        <div className="Work__proj-title-container">
-                            <h1 className="Work__proj-title">Study In Ukraine</h1>
+                    <div className={`Work__info-container ${isArabic ? "Work__info-container--arb" : ""}`}
+                        data-aos="fade-left"
+                        data-aos-duration="2000"
+                    >                        <div className="Work__proj-title-container">
+                            <h1 className="Work__proj-title">{Name[1]}</h1>
                             <img src={Uk_flag} alt="A floating drone" className="Work__proj-gif-uk" />
                         </div>
                         <p
                             style={{ color: theme ? `${Light}` : "" }}
-                            className="Work__proj-info">
-                            Study-in-uk is a website that helps people to apply for a visa for studying in Ukraine and
-                            picking what university is suitable for you, its also has two languages for both english and
-                            arabic speakers to understand .
+                            className={`Work__proj-info ${isArabic ? "Work__proj-info--arb" : ""}`}>
+                            {Info[1]}
                         </p>
-
                     </div>
                 </div>
-            </div>
+            </>
 
-            <div className="Work__proj-container">
+            <>
                 <div className="Work__proj-box">
                     <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
                         <a className="Work__proj-link" href="https://movie-picker-me.vercel.app" target="__blank">
@@ -105,24 +114,24 @@ export default function Work() {
                             />
                         </a>
                     </div>
-                    <div className="Work__info-container" data-aos="fade-left" data-aos-duration="2000">
-                        <div className="Work__proj-title-container">
-                            <h1 className="Work__proj-title">Movie picker</h1>
+                    <div className={`Work__info-container ${isArabic ? "Work__info-container--arb" : ""}`}
+                        data-aos="fade-left"
+                        data-aos-duration="2000"
+                    >                        <div className="Work__proj-title-container">
+                            <h1 className="Work__proj-title">{Name[2]}</h1>
                             <img src={Pop} alt="A floating drone" className="Work__proj-gif-pop" />
                         </div>
                         <p
                             style={{ color: theme ? `${Light}` : "" }}
-                            className="Work__proj-info">
-                            Movie picker is a website that helps you search for your favourite movie or series,
-                            it also has sanity built in. so the client can edit, add and remove movies or series that
-                            they would want to be in the website.
+                            className={`Work__proj-info ${isArabic ? "Work__proj-info--arb" : ""}`}>
+                            {Info[2]}
                         </p>
 
                     </div>
                 </div>
-            </div>
-            
-            <div className="Work__proj-container">
+            </>
+
+            <>
                 <div className="Work__proj-box">
                     <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
                         <a className="Work__proj-link" href="https://photographer-profo.vercel.app" target="__blank">
@@ -133,23 +142,23 @@ export default function Work() {
                             />
                         </a>
                     </div>
-                    <div className="Work__info-container" data-aos="fade-left" data-aos-duration="2000">
-                        <div className="Work__proj-title-container">
-                            <h1 className="Work__proj-title">Photography</h1>
+                    <div className={`Work__info-container ${isArabic ? "Work__info-container--arb" : ""}`}
+                        data-aos="fade-left"
+                        data-aos-duration="2000"
+                    >                        <div className="Work__proj-title-container">
+                            <h1 className="Work__proj-title">{Name[3]}</h1>
                             <img src={Camera} alt="A Clicking camera" className="Work__proj-gif-camera" />
                         </div>
                         <p
                             style={{ color: theme ? `${Light}` : "" }}
-                            className="Work__proj-info">
-                            Photography is a freelancing website created for a Photographer client that involves around the different types 
-                            of Photography and booking a Photography package for future clients.
+                            className={`Work__proj-info ${isArabic ? "Work__proj-info--arb" : ""}`}>
+                            {Info[3]}
                         </p>
-
                     </div>
                 </div>
-            </div>
+            </>
 
-            <div className="Work__proj-container">
+            <>
                 <div className="Work__proj-box">
                     <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
                         <a className="Work__proj-link" href="https://stocks-azure.vercel.app" target="__blank">
@@ -160,21 +169,23 @@ export default function Work() {
                             />
                         </a>
                     </div>
-                    <div className="Work__info-container" data-aos="fade-left" data-aos-duration="2000">
-                        <div className="Work__proj-title-container">
-                            <h1 className="Work__proj-title">Stocks</h1>
+                    <div className={`Work__info-container ${isArabic ? "Work__info-container--arb" : ""}`}
+                        data-aos="fade-left"
+                        data-aos-duration="2000"
+                    >                        <div className="Work__proj-title-container">
+                            <h1 className="Work__proj-title">{Name[4]}</h1>
                             <img src={Crypto} alt="A floating drone" className="Work__proj-gif" />
                         </div>
                         <p style={{ color: theme ? `${Light}` : "" }}
-                            className="Work__proj-info">
-                            A freelancing website i created for a client that involves crypto currencies.
+                            className={`Work__proj-info ${isArabic ? "Work__proj-info--arb" : ""}`}>
+                            {Info[4]}
                         </p>
 
                     </div>
                 </div>
-            </div>
+            </>
 
-            <div className="Work__proj-container">
+            <>
                 <div className="Work__proj-box">
                     <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
                         <a className="Work__proj-link" href="https://my-protfolio-me.vercel.app" target="__blank">
@@ -185,19 +196,21 @@ export default function Work() {
                             />
                         </a>
                     </div>
-                    <div className="Work__info-container" data-aos="fade-left" data-aos-duration="2000">
-                        <div className="Work__proj-title-container">
-                            <h1 className="Work__proj-title">Old profolio</h1>
+                    <div className={`Work__info-container ${isArabic ? "Work__info-container--arb" : ""}`}
+                        data-aos="fade-left"
+                        data-aos-duration="2000"
+                    >                        <div className="Work__proj-title-container">
+                            <h1 className="Work__proj-title">{Name[5]}</h1>
                             <img src={Old} alt="A floating drone" className="Work__proj-gif" />
                         </div>
                         <p style={{ color: theme ? `${Light}` : "" }}
-                            className="Work__proj-info">
-                            This my first profolio i've built long time ago, and you can see the improvements already.
+                            className={`Work__proj-info ${isArabic ? "Work__proj-info--arb" : ""}`}>
+                            {Info[5]}
                         </p>
 
                     </div>
                 </div>
-            </div>
+            </>
         </div>
     )
 }

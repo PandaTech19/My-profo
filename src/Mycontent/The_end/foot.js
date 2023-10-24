@@ -7,10 +7,12 @@ import { AiFillLinkedin, AiFillGithub, AiFillInstagram } from "react-icons/ai";
 import { BsTelegram } from "react-icons/bs";
 
 export default function End() {
-    const { theme, dark, Light } = useContext(AppContext);
+    const { t, isArabic, theme, dark, Light } = useContext(AppContext);
+    const Navigation = t("Navigation_links", { returnObjects: true });
+
     return (
         <div id="projects" className="Foot" style={{ background: theme ? `${Light}` : "" }}>
-            <div className="Foot__logo-container">
+            <div className={`Foot__logo-container ${isArabic ? "Foot__logo-container--arb" : ""}`}>
                 <HashLink smooth to="/#">
                     <img
                         src={Logo_foot}
@@ -19,7 +21,7 @@ export default function End() {
                     />
                 </HashLink>
             </div>
-            <div className="Foot__link-container"
+            <div className={`Foot__link-container ${isArabic ? "Foot__link-container--arb" : ""}`}
                 style={{
                     borderBottom: theme ? `2px solid ${dark}` : "",
                     borderTop: theme ? `2px solid ${dark}` : ""
@@ -28,30 +30,35 @@ export default function End() {
                     style={{ color: theme ? `${dark}` : "" }}
                     className="Foot__link"
                     smooth to="/#Skills">
-                    Skills
+                    {Navigation[0]}
                 </HashLink>
                 <HashLink
                     style={{ color: theme ? `${dark}` : "" }}
                     className="Foot__link"
                     smooth to="/#projects">
-                    Projects
+                    {Navigation[1]}
                 </HashLink>
                 <HashLink
                     style={{ color: theme ? `${dark}` : "" }}
                     className="Foot__link"
                     smooth to="/#about">
-                    About me
+                    {Navigation[2]}
                 </HashLink>
 
                 <HashLink
                     style={{ color: theme ? `${dark}` : "" }}
                     className="Foot__link"
                     smooth to="/CONTACTS#contact-me">
-                    Contact me
+                    {Navigation[3]}
                 </HashLink>
             </div>
             <div className="Foot__social-container">
-                <div className="Foot__created" style={{ color: theme ? `${dark}` : "" }}>©2022 Proudly created with React</div>
+
+                <div
+                    className={`Foot__created ${isArabic ? "Foot__created--arb" : ""}`}
+                    style={{ color: theme ? `${dark}` : "" }}>
+                    {t("Footer_cc")}
+                </div>
                 <div className="Foot__socials">
                     <a aria-label="This is a link to my linkedin"
                         href="https://www.linkedin.com/in/samer-timani-21b4b41b7"

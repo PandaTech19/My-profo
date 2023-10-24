@@ -3,41 +3,53 @@ import { AppContext } from "../../Mycontext/context";
 import Phone from "./phone.gif";
 
 export default function Contact() {
-    const { theme, dark, Light } = useContext(AppContext);
+    const { t, isArabic, theme, dark, Light } = useContext(AppContext);
+    const Info = t("GetInTouch_about", { returnObjects: true });
+    const Placeholders = t("GetInTouch_placeholders", { returnObjects: true });
 
 
     return (
         <div id="contact-me" className="Contact-me">
-            <div className="Contact-me__head-container">
+            <div className={`Contact-me__head-container ${isArabic ? "Contact-me__head-container--arb" : ""}`}>
                 <h1
                     style={{ color: theme ? "rgb(217, 217, 217)" : "" }}
                     className="Contact-me__head">
-                    Get In Touch
+                    {t("GetInTouch_title")}
                 </h1>
                 <img
                     src={Phone}
-                    alt=""
+                    alt="A Phone ringing"
                     className="Contact-me__gif"
                 />
             </div>
-            <div className="Contact-me__title-container" data-aos="fade-right" data-aos-duration="2000">
+            <div
+                className={`Contact-me__title-container ${isArabic ? "Contact-me__title-container--arb" : ""}`}
+                data-aos="fade-right" data-aos-duration="2000"
+            >
+
                 <p
                     style={{ color: theme ? "rgb(217, 217, 217)" : "" }}
                     className="Contact-me__title">
-                    There you are i've been waiting for you 😀<br /><br />
-                    Don't be shy feel free to ask me anything either by<br />
-                    <a href="mailto:pandatech1999@gmail.com" className="Contact-me__mail">Emailing me</a>
-                    or using the form below 👇
+                    {Info[0]}
+                    <br /><br />
+                    {Info[1]}
+                    <br />
+                    <a href="mailto:pandatech1999@gmail.com" className="Contact-me__mail">{Info[2]}</a>
+                    {Info[3]}
                 </p>
             </div>
-            <div className="Contact-me__form-container" data-aos="zoom-in" data-aos-duration="2000">
+            <div
+                className={`Contact-me__form-container ${isArabic ? "Contact-me__form-container--arb" : ""}`}
+                data-aos-duration="2000"
+                data-aos="zoom-in"
+            >
                 <form
                     action="https://send.pageclip.co/waHDjruVHuDXfRjJGMQfBTvkiy63ofDN/My-first-form"
                     class="pageclip-form"
                     className="Contact-me__form"
                     method="post">
                     <input
-                        placeholder="Your Name..."
+                        placeholder={Placeholders[0]}
                         type={Text}
                         name="name"
                         data-name="name"
@@ -49,7 +61,7 @@ export default function Contact() {
                         required
                     />
                     <input
-                        placeholder="Your Email..."
+                        placeholder={Placeholders[1]}
                         type={Text}
                         name="email"
                         data-name="Email"
@@ -62,7 +74,7 @@ export default function Contact() {
                     />
                     <textarea
                         className="Contact-me__message"
-                        placeholder="Ask Me Anything"
+                        placeholder={Placeholders[2]}
                         type={Text}
                         name="body"
                         data-name="message"
@@ -80,7 +92,7 @@ export default function Contact() {
                             color: theme ? `${dark}` : ""
                         }}
                     >
-                        Send
+                        {Placeholders[3]}
                     </button>
                 </form>
             </div>
