@@ -134,7 +134,7 @@ export default function Work() {
             <>
                 <div className="Work__proj-box">
                     <div className="Work__proj-pic-container" data-aos="fade-right" data-aos-duration="2000">
-                        <a className="Work__proj-link" href="https://photographer-profo.vercel.app" target="__blank">
+                        <a className="Work__proj-link" href="https://pick-best-moments.vercel.app" target="__blank">
                             <img
                                 src={Photography}
                                 alt="The project to Photography"
