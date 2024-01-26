@@ -55,7 +55,7 @@
 }
 @media (max-width: 768px) and (min-width: 425px) {
   .Navbar__link-container {
-    font-size: 3.5vw;
+    font-size: 3.4vw;
   }
   .Navbar__link-container--esp {
     font-size: 2.5vw;
@@ -784,8 +784,7 @@
 }
 .Work__proj-link {
   display: flex;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 90%;
 }
 @media (max-width: 768px) and (min-width: 425px) {
   .Work__proj-link {
@@ -801,7 +800,7 @@
 }
 .Work__proj-pic {
   display: block;
-  width: 80%;
+  width: 100%;
   background-color: #fff;
   height: auto;
   border-radius: 5%;

@@ -138,7 +138,7 @@
 
     &__proj-link {
         display: flex;
-        width: fit-content;
+        width: 90%;
         @include Tablet {
             align-items: center;
             justify-content: center;
@@ -152,7 +152,7 @@
 
     &__proj-pic {
         display: block;
-        width: 80%;
+        width: 100%;
         background-color: #fff;
         height: auto;
         border-radius: 5%;
