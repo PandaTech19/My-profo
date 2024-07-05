@@ -1,0 +1,73 @@
+@import "../../Styles/utilities/varaibles";
+@import "../../Styles/utilities/mixins";
+
+.Loading {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background:#343640;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+
+    &_Middle {
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        border-radius: 15%;
+        filter: grayscale(100%);
+        animation: fadeToColor 3s forwards;
+        position: relative;
+
+        @include Mobile{
+            width: 150px;
+            height: 150px;
+        }
+    }
+
+    @keyframes fadeToColor {
+        to {
+            filter: grayscale(0%);
+        }
+    }
+
+    .Loading_Text {
+        display: flex;
+        color: #fff;
+        font-weight: bold;
+        -webkit-text-stroke: 2px #1072d5;
+        margin-top: 20px;
+        align-items: center;
+        gap: 2px;
+
+        .dot {
+            animation: blink 1s infinite steps(1, end) both;
+            opacity: 0;
+            font-size: 100px;
+        }
+
+        .dot:nth-child(1) {
+            animation-delay: 0.2s;
+        }
+
+        .dot:nth-child(2) {
+            animation-delay: 0.4s;
+        }
+
+        .dot:nth-child(3) {
+            animation-delay: 0.6s;
+        }
+    }
+
+    @keyframes blink {
+        0%,
+        100% {
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+    }
+}

@@ -23,6 +23,7 @@
     "react-scripts": "5.0.1",
     "react-world-flags": "^1.5.1",
     "sass": "^1.55.0",
+    "swiper": "^11.1.4",
     "web-vitals": "^2.1.4"
   },
   "scripts": {

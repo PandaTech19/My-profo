@@ -5,7 +5,7 @@ import 'aos/dist/aos.css';
 import { AppContext } from "./Mycontext/context";
 import { useTranslation } from 'react-i18next';
 
-
+import Loading from "./Mycontent/LoadingScreen/loading"
 import Navbar from "./Mycontent/Navigation/nav";
 import Head from "./Mycontent/Introduction/head";
 import Skills from "./Mycontent/Skills/skills";
