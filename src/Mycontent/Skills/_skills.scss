@@ -140,7 +140,8 @@
         height: 12vw;
         padding: 2%;
         border: 5px solid $primary_color;
-        border-radius: 50%;
+        background-color: $secondary_color;
+        border-radius: 30%;
         position: relative;
 
         &:hover {
